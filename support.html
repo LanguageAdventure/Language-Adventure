@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support the game | Language Adventure</title>
+<meta name="description" content="Help make Language Adventure: support the game on Patreon or Ko-fi, or help in other ways.">
+<meta name="theme-color" content="#FFCC00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <nav class="flags" id="flags" aria-label="Language"></nav>
+  <a class="logo" href="index.html" style="display:block"><img src="img/logo.png" alt="Language Adventure" width="1080" height="461"></a>
+  <nav class="menu" aria-label="Main">
+    <a href="index.html" data-i18n="navHome">Home</a>
+    <a href="about.html" data-i18n="navAbout">About the game</a>
+    <a href="support.html" aria-current="page" data-i18n="navSupport">Support the game</a>
+  </nav>
+</header>
+
+<div class="layout">
+<aside class="side" data-photos="2,9" aria-hidden="true"></aside>
+<main>
+  <h1 class="page-title" data-i18n="supTitle">Help me make the game!</h1>
+  <p class="lead" data-i18n="supIntro"></p>
+
+  <section class="support-block">
+    <h2 data-i18n="patreonTitle">Join me on Patreon</h2>
+    <p data-i18n="patreonText"></p>
+    <a class="btn" href="https://www.patreon.com/c/LanguageAdventureEnglish" target="_blank" rel="noopener" data-i18n="patreonBtn">Support on Patreon</a>
+  </section>
+
+  <section class="support-block">
+    <h2 data-i18n="kofiTitle">Buy me a coffee on Ko-fi</h2>
+    <p data-i18n="kofiText"></p>
+    <a class="btn" href="https://ko-fi.com/languageadventure" target="_blank" rel="noopener" data-i18n="kofiBtn">Support on Ko-fi</a>
+  </section>
+
+  <section class="support-block">
+    <h2 data-i18n="freeTitle">Can't donate? You can still help!</h2>
+    <ul class="bullets" style="display:inline-block;text-align:left;margin:0">
+      <li><a href="https://store.steampowered.com/app/2204770" target="_blank" rel="noopener" data-i18n="free1">Add it to your Steam wishlist</a></li>
+      <li data-i18n="free2"></li>
+      <li><a href="mailto:gameswonky@gmail.com?subject=Language%20Adventure%20demo%20playtester" data-i18n="free3">Become a demo playtester</a></li>
+    </ul>
+  </section>
+
+  <p class="thanks" data-i18n="thanks"></p>
+</main>
+<aside class="side" data-photos="5,4" aria-hidden="true"></aside>
+</div>
+
+<footer id="contact">
+  <h2 data-i18n="contactTitle">Contact</h2>
+  <p data-i18n="contactText"></p>
+  <p><a href="mailto:gameswonky@gmail.com"><strong>gameswonky@gmail.com</strong></a></p>
+  <p class="small">&copy; <span id="year"></span> Wonky Games. <span data-i18n="rights">All rights reserved.</span></p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

@@ -12,123 +12,23 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --yellow: #FFCC00;
-    --ink: #2e2108;
-    --card: #FFF6D6;
-    --accent: #2e2108;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: var(--yellow);
-    color: var(--ink);
-    font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.65;
-  }
-  h1, h2, h3 { font-family: 'Fredoka', 'Nunito', system-ui, sans-serif; font-weight: 700; line-height: 1.2; }
-  h2, h3 {
-    color: #fff;
-    -webkit-text-stroke: 1.5px #000;
-    paint-order: stroke fill;
-    text-shadow: 0 1px 0 rgba(0,0,0,.15);
-  }
-  h2 { font-size: clamp(1.7rem, 4vw, 2.3rem); margin: 0 0 14px; }
-  h3 { font-size: 1.3rem; margin: 0 0 6px; }
-  a { color: inherit; }
-
-  /* Top: flags + logo */
-  .top { text-align: center; padding: 16px 16px 0; }
-  .flags { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
-  .flags button {
-    border: 3px solid transparent; border-radius: 8px; background: none; padding: 2px;
-    cursor: pointer; opacity: .75; transition: transform .15s, opacity .15s;
-    line-height: 0;
-  }
-  .flags button:hover { opacity: 1; transform: translateY(-2px); }
-  .flags button:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
-  .flags button[aria-pressed="true"] { opacity: 1; border-color: var(--ink); transform: scale(1.1); }
-  .flags svg { width: 42px; height: 28px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,.35); display: block; }
-  .logo { margin: 14px auto 0; max-width: 460px; }
-  .logo img { width: 100%; height: auto; display: block; }
-  .tagline { font-size: 1.3rem; font-weight: 800; margin: 4px 0 0; }
-
-  main { max-width: 960px; margin: 0 auto; padding: 0 18px 20px; }
-  section { margin-top: 48px; }
-
-  /* Trailer */
-  .trailer h2 { text-align: center; }
-  .video {
-    position: relative; aspect-ratio: 16 / 9; width: 100%;
-    border-radius: 20px; overflow: hidden; background: #000;
-    border: 5px solid var(--ink); box-shadow: 0 8px 24px rgba(0,0,0,.25);
-  }
-  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-
-  /* Cards and layout */
-  .card { padding: 0; }
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
-  .shot { width: 100%; height: auto; border-radius: 16px; border: 4px solid var(--ink); display: block; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
-  .grid p { margin: 0; }
-
-  dl { margin: 0 0 18px; display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; }
-  dt { font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 700; }
-  dd { margin: 0; }
-  .btn {
-    display: inline-block; background: var(--ink); color: var(--yellow);
-    padding: 12px 28px; border-radius: 999px; text-decoration: none;
-    font-weight: 800; font-size: 1.05rem; transition: transform .15s;
-  }
-  .btn:hover { transform: translateY(-2px); }
-  .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
-
-  /* Playtesters call-out */
-  .callout { text-align: center; }
-  .callout p { max-width: 620px; margin: 0 auto 20px; }
-
-  footer { text-align: center; padding: 40px 18px 36px; }
-  footer p { margin: 6px 0; }
-  footer .small { font-size: .9rem; opacity: .8; }
-
-  @media (max-width: 720px) {
-    .two-col { grid-template-columns: 1fr; }
-    dl { grid-template-columns: 1fr; gap: 0; }
-    dd { margin-bottom: 8px; }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="top">
-  <nav class="flags" aria-label="Language">
-    <button type="button" data-lang="en" aria-label="English" title="English">
-      <svg viewBox="0 0 60 30" preserveAspectRatio="none" aria-hidden="true"><clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#s)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>
-    </button>
-    <button type="button" data-lang="fr" aria-label="Français" title="Français">
-      <svg viewBox="0 0 30 20" preserveAspectRatio="none" aria-hidden="true"><rect width="10" height="20" fill="#0055A4"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#EF4135"/></svg>
-    </button>
-    <button type="button" data-lang="es" aria-label="Español" title="Español">
-      <svg viewBox="0 0 30 20" preserveAspectRatio="none" aria-hidden="true"><rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/></svg>
-    </button>
-    <button type="button" data-lang="pt" aria-label="Português" title="Português">
-      <svg viewBox="0 0 30 20" preserveAspectRatio="none" aria-hidden="true"><rect width="30" height="20" fill="#FF0000"/><rect width="12" height="20" fill="#006600"/><circle cx="12" cy="10" r="3.8" fill="#FFE000"/><rect x="10.5" y="8.3" width="3" height="3.4" rx=".6" fill="#D00000" stroke="#fff" stroke-width=".5"/></svg>
-    </button>
-    <button type="button" data-lang="de" aria-label="Deutsch" title="Deutsch">
-      <svg viewBox="0 0 30 20" preserveAspectRatio="none" aria-hidden="true"><rect width="30" height="20" fill="#FFCE00"/><rect width="30" height="13.4" fill="#DD0000"/><rect width="30" height="6.7" fill="#000"/></svg>
-    </button>
-    <button type="button" data-lang="it" aria-label="Italiano" title="Italiano">
-      <svg viewBox="0 0 30 20" preserveAspectRatio="none" aria-hidden="true"><rect width="10" height="20" fill="#009246"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#CE2B37"/></svg>
-    </button>
-  </nav>
-
+  <nav class="flags" id="flags" aria-label="Language"></nav>
   <h1 class="logo"><img src="img/logo.png" alt="Language Adventure" width="1080" height="461"></h1>
   <p class="tagline" data-i18n="tagline">A stop motion animated language learning adventure game.</p>
+  <nav class="menu" aria-label="Main">
+    <a href="index.html" aria-current="page" data-i18n="navHome">Home</a>
+    <a href="about.html" data-i18n="navAbout">About the game</a>
+    <a href="support.html" data-i18n="navSupport">Support the game</a>
+  </nav>
 </header>
 
+<div class="layout">
+<aside class="side" data-photos="1,3,5,7,9" aria-hidden="true"></aside>
 <main>
   <section class="trailer" aria-labelledby="trailer-h">
     <h2 id="trailer-h" data-i18n="watch">Watch the trailer</h2>
@@ -176,6 +76,8 @@
     <a class="btn" href="mailto:gameswonky@gmail.com?subject=Language%20Adventure%20demo%20playtester" data-i18n="playtestBtn">Email us to join</a>
   </section>
 </main>
+<aside class="side" data-photos="2,4,6,8" aria-hidden="true"></aside>
+</div>
 
 <footer id="contact">
   <h2 data-i18n="contactTitle">Contact</h2>
@@ -184,163 +86,6 @@
   <p class="small">&copy; <span id="year"></span> Wonky Games. <span data-i18n="rights">All rights reserved.</span></p>
 </footer>
 
-<script>
-(function () {
-  var T = {
-    en: {
-      tagline: "A stop motion animated language learning adventure game.",
-      watch: "Watch the trailer",
-      aboutTitle: "About the game",
-      aboutP1: "Learn a new language by exploring a handmade stop motion town. Talk to the characters, interact with objects and discover how words work in real situations.",
-      aboutP2: "It all starts when an alien spaceship crash-lands in your garden. Learn to communicate with your new visitors and help them find their way home.",
-      featuresTitle: "Features",
-      f1t: "Handmade stop motion", f1d: "Every scene is crafted by hand and brought to life frame by frame.",
-      f2t: "Point-and-click adventure", f2d: "Solve logic puzzles and explore a charming little town.",
-      f3t: "Learn by doing", f3d: "Pick up vocabulary through conversation and play. Ideal for beginner and intermediate learners of all ages.",
-      f4t: "Six languages", f4d: "Interface, audio and subtitles in English, French, Spanish, Portuguese, German and Italian.",
-      detailsTitle: "Game details", dev: "Developer", platform: "Platform", players: "Players", release: "Release",
-      playersVal: "Single-player", releaseVal: "Date to be announced",
-      steamBtn: "See it on Steam",
-      playtestTitle: "Be a demo playtester!",
-      playtestText: "We're looking for players to try the demo and tell us what they think. Your feedback will help shape the final game. Interested? Send us an email.",
-      playtestBtn: "Email us to join",
-      contactTitle: "Contact",
-      contactText: "Questions, feedback or press enquiries? Get in touch:",
-      rights: "All rights reserved."
-    },
-    fr: {
-      tagline: "Un jeu d'aventure en stop motion pour apprendre une langue.",
-      watch: "Regardez la bande-annonce",
-      aboutTitle: "À propos du jeu",
-      aboutP1: "Apprenez une nouvelle langue en explorant une petite ville fabriquée à la main en stop motion. Parlez aux personnages, interagissez avec les objets et découvrez comment fonctionnent les mots dans des situations réelles.",
-      aboutP2: "Tout commence quand un vaisseau extraterrestre s'écrase dans votre jardin. Apprenez à communiquer avec vos nouveaux visiteurs et aidez-les à rentrer chez eux.",
-      featuresTitle: "Caractéristiques",
-      f1t: "Stop motion fait main", f1d: "Chaque scène est fabriquée à la main et prend vie image par image.",
-      f2t: "Aventure point-and-click", f2d: "Résolvez des énigmes logiques et explorez une charmante petite ville.",
-      f3t: "Apprendre en jouant", f3d: "Enrichissez votre vocabulaire par la conversation et le jeu. Idéal pour les débutants et les niveaux intermédiaires, à tout âge.",
-      f4t: "Six langues", f4d: "Interface, audio et sous-titres en anglais, français, espagnol, portugais, allemand et italien.",
-      detailsTitle: "Infos sur le jeu", dev: "Développeur", platform: "Plateforme", players: "Joueurs", release: "Sortie",
-      playersVal: "Solo", releaseVal: "Date à confirmer",
-      steamBtn: "Voir sur Steam",
-      playtestTitle: "Devenez testeur de la démo !",
-      playtestText: "Nous cherchons des joueurs pour essayer la démo et nous dire ce qu'ils en pensent. Vos retours aideront à façonner le jeu final. Intéressé(e) ? Envoyez-nous un e-mail.",
-      playtestBtn: "Écrivez-nous pour participer",
-      contactTitle: "Contact",
-      contactText: "Une question, un retour ou une demande presse ? Écrivez-nous :",
-      rights: "Tous droits réservés."
-    },
-    es: {
-      tagline: "Una aventura de aprendizaje de idiomas en stop motion.",
-      watch: "Mira el tráiler",
-      aboutTitle: "Sobre el juego",
-      aboutP1: "Aprende un nuevo idioma explorando un pueblo hecho a mano en stop motion. Habla con los personajes, interactúa con los objetos y descubre cómo funcionan las palabras en situaciones reales.",
-      aboutP2: "Todo empieza cuando una nave espacial alienígena aterriza de golpe en tu jardín. Aprende a comunicarte con tus nuevos visitantes y ayúdales a volver a casa.",
-      featuresTitle: "Características",
-      f1t: "Stop motion hecho a mano", f1d: "Cada escena está creada a mano y cobra vida fotograma a fotograma.",
-      f2t: "Aventura point-and-click", f2d: "Resuelve puzles de lógica y explora un encantador pueblecito.",
-      f3t: "Aprende jugando", f3d: "Aprende vocabulario conversando y jugando. Ideal para principiantes y nivel intermedio, de todas las edades.",
-      f4t: "Seis idiomas", f4d: "Interfaz, audio y subtítulos en inglés, francés, español, portugués, alemán e italiano.",
-      detailsTitle: "Datos del juego", dev: "Desarrollador", platform: "Plataforma", players: "Jugadores", release: "Lanzamiento",
-      playersVal: "Un jugador", releaseVal: "Fecha por anunciar",
-      steamBtn: "Ver en Steam",
-      playtestTitle: "¡Sé probador de la demo!",
-      playtestText: "Buscamos jugadores que prueben la demo y nos cuenten qué les parece. Tus comentarios ayudarán a dar forma al juego final. ¿Te interesa? Envíanos un correo.",
-      playtestBtn: "Escríbenos para participar",
-      contactTitle: "Contacto",
-      contactText: "¿Preguntas, comentarios o consultas de prensa? Escríbenos:",
-      rights: "Todos los derechos reservados."
-    },
-    pt: {
-      tagline: "Uma aventura de aprendizagem de línguas em stop motion.",
-      watch: "Veja o trailer",
-      aboutTitle: "Sobre o jogo",
-      aboutP1: "Aprenda uma nova língua a explorar uma vila feita à mão em stop motion. Fale com as personagens, interaja com os objetos e descubra como as palavras funcionam em situações reais.",
-      aboutP2: "Tudo começa quando uma nave espacial alienígena aterra de emergência no seu jardim. Aprenda a comunicar com os seus novos visitantes e ajude-os a regressar a casa.",
-      featuresTitle: "Características",
-      f1t: "Stop motion feito à mão", f1d: "Cada cena é feita à mão e ganha vida fotograma a fotograma.",
-      f2t: "Aventura point-and-click", f2d: "Resolva puzzles de lógica e explore uma pequena vila encantadora.",
-      f3t: "Aprender a jogar", f3d: "Aprenda vocabulário através de conversas e brincadeira. Ideal para principiantes e nível intermédio, de todas as idades.",
-      f4t: "Seis línguas", f4d: "Interface, áudio e legendas em inglês, francês, espanhol, português, alemão e italiano.",
-      detailsTitle: "Detalhes do jogo", dev: "Estúdio", platform: "Plataforma", players: "Jogadores", release: "Lançamento",
-      playersVal: "Um jogador", releaseVal: "Data a anunciar",
-      steamBtn: "Ver no Steam",
-      playtestTitle: "Seja testador da demo!",
-      playtestText: "Procuramos jogadores para experimentar a demo e dizer-nos o que acham. O seu feedback vai ajudar a moldar o jogo final. Interessado? Envie-nos um e-mail.",
-      playtestBtn: "Escreva-nos para participar",
-      contactTitle: "Contacto",
-      contactText: "Dúvidas, comentários ou pedidos de imprensa? Entre em contacto:",
-      rights: "Todos os direitos reservados."
-    },
-    de: {
-      tagline: "Ein Stop-Motion-Abenteuer zum Sprachenlernen.",
-      watch: "Trailer ansehen",
-      aboutTitle: "Über das Spiel",
-      aboutP1: "Lerne eine neue Sprache, indem du eine handgemachte Stop-Motion-Stadt erkundest. Sprich mit den Figuren, interagiere mit Gegenständen und entdecke, wie Wörter in echten Situationen funktionieren.",
-      aboutP2: "Alles beginnt, als ein außerirdisches Raumschiff in deinem Garten bruchlandet. Lerne, mit deinen neuen Besuchern zu kommunizieren, und hilf ihnen, den Weg nach Hause zu finden.",
-      featuresTitle: "Features",
-      f1t: "Handgemachte Stop-Motion", f1d: "Jede Szene ist von Hand gebaut und wird Bild für Bild zum Leben erweckt.",
-      f2t: "Point-and-Click-Abenteuer", f2d: "Löse Logikrätsel und erkunde eine charmante kleine Stadt.",
-      f3t: "Lernen durch Spielen", f3d: "Lerne Vokabeln durch Gespräche und Spiel. Ideal für Anfänger und Lernende mit Vorkenntnissen, jeden Alters.",
-      f4t: "Sechs Sprachen", f4d: "Oberfläche, Audio und Untertitel auf Englisch, Französisch, Spanisch, Portugiesisch, Deutsch und Italienisch.",
-      detailsTitle: "Spieldetails", dev: "Entwickler", platform: "Plattform", players: "Spieler", release: "Erscheinung",
-      playersVal: "Einzelspieler", releaseVal: "Wird noch bekannt gegeben",
-      steamBtn: "Auf Steam ansehen",
-      playtestTitle: "Werde Demo-Tester!",
-      playtestText: "Wir suchen Spielerinnen und Spieler, die die Demo ausprobieren und uns sagen, wie sie sie finden. Dein Feedback hilft, das fertige Spiel zu gestalten. Interesse? Schreib uns eine E-Mail.",
-      playtestBtn: "Schreib uns, um mitzumachen",
-      contactTitle: "Kontakt",
-      contactText: "Fragen, Feedback oder Presseanfragen? Melde dich bei uns:",
-      rights: "Alle Rechte vorbehalten."
-    },
-    it: {
-      tagline: "Un'avventura in stop motion per imparare le lingue.",
-      watch: "Guarda il trailer",
-      aboutTitle: "Informazioni sul gioco",
-      aboutP1: "Impara una nuova lingua esplorando una cittadina fatta a mano in stop motion. Parla con i personaggi, interagisci con gli oggetti e scopri come funzionano le parole nelle situazioni reali.",
-      aboutP2: "Tutto comincia quando un'astronave aliena precipita nel tuo giardino. Impara a comunicare con i tuoi nuovi ospiti e aiutali a tornare a casa.",
-      featuresTitle: "Caratteristiche",
-      f1t: "Stop motion fatto a mano", f1d: "Ogni scena è realizzata a mano e prende vita fotogramma dopo fotogramma.",
-      f2t: "Avventura point-and-click", f2d: "Risolvi enigmi logici ed esplora una graziosa cittadina.",
-      f3t: "Impara giocando", f3d: "Impara il vocabolario conversando e giocando. Ideale per principianti e livello intermedio, di tutte le età.",
-      f4t: "Sei lingue", f4d: "Interfaccia, audio e sottotitoli in inglese, francese, spagnolo, portoghese, tedesco e italiano.",
-      detailsTitle: "Dettagli del gioco", dev: "Sviluppatore", platform: "Piattaforma", players: "Giocatori", release: "Uscita",
-      playersVal: "Giocatore singolo", releaseVal: "Data da annunciare",
-      steamBtn: "Vedi su Steam",
-      playtestTitle: "Diventa tester della demo!",
-      playtestText: "Cerchiamo giocatori che provino la demo e ci dicano cosa ne pensano. I tuoi commenti aiuteranno a dare forma al gioco finale. Ti interessa? Scrivici un'e-mail.",
-      playtestBtn: "Scrivici per partecipare",
-      contactTitle: "Contatti",
-      contactText: "Domande, commenti o richieste per la stampa? Scrivici:",
-      rights: "Tutti i diritti riservati."
-    }
-  };
-
-  var buttons = document.querySelectorAll('.flags button');
-  var nodes = document.querySelectorAll('[data-i18n]');
-
-  function setLang(l) {
-    if (!T[l]) l = 'en';
-    nodes.forEach(function (n) {
-      var v = T[l][n.getAttribute('data-i18n')];
-      if (v !== undefined) n.textContent = v;
-    });
-    document.documentElement.lang = l;
-    buttons.forEach(function (b) {
-      b.setAttribute('aria-pressed', b.getAttribute('data-lang') === l ? 'true' : 'false');
-    });
-    try { localStorage.setItem('la-lang', l); } catch (e) {}
-  }
-
-  buttons.forEach(function (b) {
-    b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
-  });
-
-  var start = 'en';
-  try { start = localStorage.getItem('la-lang') || ''; } catch (e) {}
-  if (!start) start = (navigator.language || 'en').slice(0, 2).toLowerCase();
-  document.getElementById('year').textContent = new Date().getFullYear();
-  setLang(start);
-})();
-</script>
+<script src="site.js"></script>
 </body>
 </html>
