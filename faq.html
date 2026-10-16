@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFCC00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>FAQ | Language Adventure</title>
+<meta name="description" content="Frequently asked questions about Language Adventure, including whether AI is used to make it.">
+</head>
+<body>
+
+<header class="top">
+  <nav class="flags" id="flags" aria-label="Language"></nav>
+  <div class="hero-banner">
+    <img class="bg" src="img/banner.jpg" alt="" width="1800" height="439">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Language Adventure" width="1080" height="461"></a>
+  </div>
+  <nav class="menu" aria-label="Main">
+    <a href="index.html" data-i18n="navHome">Home</a>
+    <a href="support.html" data-i18n="navSupport">Support the game</a>
+  </nav>
+</header>
+
+<div class="layout">
+<aside class="side" data-photos="12,7" aria-hidden="true"></aside>
+<main>
+  <h1 class="page-title" data-i18n="faqTitle">Frequently asked questions</h1>
+
+  <details class="faq"><summary data-i18n="q1">What is Language Adventure?</summary>
+    <div class="ans"><p data-i18n="aboutP1"></p><p data-i18n="aboutP2"></p></div></details>
+
+  <details class="faq"><summary data-i18n="q2">Who is it for?</summary>
+    <div class="ans"><p data-i18n="b2"></p></div></details>
+
+  <details class="faq"><summary data-i18n="q3">Which languages does it support?</summary>
+    <div class="ans"><p data-i18n="b6"></p></div></details>
+
+  <details class="faq"><summary data-i18n="q4">What can I play it on?</summary>
+    <div class="ans"><p data-i18n="b7"></p></div></details>
+
+  <details class="faq"><summary data-i18n="q5">When is it coming out?</summary>
+    <div class="ans"><p data-i18n="a5"></p></div></details>
+
+  <details class="faq"><summary data-i18n="q6">Can I play the demo early?</summary>
+    <div class="ans"><p><span data-i18n="a6"></span> <a href="demo.html" data-i18n="demoLink">Play the demo early</a></p></div></details>
+
+  <details class="faq" id="ai"><summary data-i18n="aiTitle">Do I use AI?</summary>
+    <div class="ans">
+      <p data-i18n="aiIntro"></p>
+      <h3 data-i18n="aiHelpTitle">Where AI helps me</h3>
+      <ul class="bullets">
+        <li data-i18n="h1"></li>
+        <li data-i18n="h2"></li>
+        <li data-i18n="h3"></li>
+        <li data-i18n="h4"></li>
+        <li data-i18n="h5"></li>
+      </ul>
+      <h3 data-i18n="aiHandTitle">What is 100% handmade</h3>
+      <ul class="bullets">
+        <li data-i18n="m1"></li>
+        <li data-i18n="m2"></li>
+        <li data-i18n="m3"></li>
+      </ul>
+      <p class="ai-close" data-i18n="aiClose"></p>
+    </div></details>
+
+  <details class="faq"><summary data-i18n="q8">How can I help?</summary>
+    <div class="ans"><p><span data-i18n="a8"></span> <a href="support.html" data-i18n="navSupport">Support the game</a></p></div></details>
+</main>
+<aside class="side" data-photos="8,15" aria-hidden="true"></aside>
+</div>
+
+<footer id="contact">
+  <h2 data-i18n="contactTitle">Contact</h2>
+  <p data-i18n="contactText"></p>
+  <p><a href="mailto:gameswonky@gmail.com"><strong>gameswonky@gmail.com</strong></a></p>
+  <p class="small">&copy; <span id="year"></span> Wonky Games. <span data-i18n="rights">All rights reserved.</span></p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

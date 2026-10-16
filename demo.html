@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFCC00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Play the demo early | Language Adventure</title>
+<meta name="description" content="Ask to play the Language Adventure demo early. No forms to fill in, just send an email.">
+</head>
+<body>
+
+<header class="top">
+  <nav class="flags" id="flags" aria-label="Language"></nav>
+  <div class="hero-banner">
+    <img class="bg" src="img/banner.jpg" alt="" width="1800" height="439">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Language Adventure" width="1080" height="461"></a>
+  </div>
+  <nav class="menu" aria-label="Main">
+    <a href="index.html" data-i18n="navHome">Home</a>
+    <a href="support.html" data-i18n="navSupport">Support the game</a>
+  </nav>
+</header>
+
+<div class="layout">
+<aside class="side" data-photos="13,4" aria-hidden="true"></aside>
+<main>
+  <h1 class="page-title" data-i18n="demoTitle">Play the demo early!</h1>
+  <p data-i18n="demoP1"></p>
+  <p data-i18n="demoP2"></p>
+  <p class="center" style="margin-top:22px"><a class="btn" href="mailto:gameswonky@gmail.com" data-mailto="demo" data-i18n="demoBtn">Email me for the demo</a></p>
+
+  <section aria-labelledby="preview-h" style="margin-top:36px">
+    <h2 id="preview-h" class="center" data-i18n="previewTitle">This is the email you'll send</h2>
+    <div class="email">
+      <div class="meta">
+        <div><b data-i18n="prevTo">To</b> gameswonky@gmail.com</div>
+        <div><b data-i18n="prevSubject">Subject</b> <span data-preview="subject"></span></div>
+      </div>
+      <pre data-preview="body"></pre>
+    </div>
+    <p class="note" data-i18n="demoNote"></p>
+  </section>
+</main>
+<aside class="side" data-photos="14,5" aria-hidden="true"></aside>
+</div>
+
+<footer id="contact">
+  <h2 data-i18n="contactTitle">Contact</h2>
+  <p data-i18n="contactText"></p>
+  <p><a href="mailto:gameswonky@gmail.com"><strong>gameswonky@gmail.com</strong></a></p>
+  <p class="small">&copy; <span id="year"></span> Wonky Games. <span data-i18n="rights">All rights reserved.</span></p>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

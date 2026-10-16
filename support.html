@@ -8,23 +8,25 @@
 <meta name="theme-color" content="#FFCC00">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="top">
   <nav class="flags" id="flags" aria-label="Language"></nav>
-  <a class="logo" href="index.html" style="display:block"><img src="img/logo.png" alt="Language Adventure" width="1080" height="461"></a>
+  <div class="hero-banner">
+    <img class="bg" src="img/banner.jpg" alt="" width="1800" height="439">
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="Language Adventure" width="1080" height="461"></a>
+  </div>
   <nav class="menu" aria-label="Main">
     <a href="index.html" data-i18n="navHome">Home</a>
-    <a href="about.html" data-i18n="navAbout">About the game</a>
     <a href="support.html" aria-current="page" data-i18n="navSupport">Support the game</a>
   </nav>
 </header>
 
 <div class="layout">
-<aside class="side" data-photos="2,9" aria-hidden="true"></aside>
+<aside class="side" data-photos="15,9" aria-hidden="true"></aside>
 <main>
   <h1 class="page-title" data-i18n="supTitle">Help me make the game!</h1>
   <p class="lead" data-i18n="supIntro"></p>
@@ -46,13 +48,13 @@
     <ul class="bullets" style="display:inline-block;text-align:left;margin:0">
       <li><a href="https://store.steampowered.com/app/2204770" target="_blank" rel="noopener" data-i18n="free1">Add it to your Steam wishlist</a></li>
       <li data-i18n="free2"></li>
-      <li><a href="mailto:gameswonky@gmail.com?subject=Language%20Adventure%20demo%20playtester" data-i18n="free3">Become a demo playtester</a></li>
+      <li><a href="demo.html" data-i18n="free3">Become a demo playtester</a></li>
     </ul>
   </section>
 
   <p class="thanks" data-i18n="thanks"></p>
 </main>
-<aside class="side" data-photos="5,4" aria-hidden="true"></aside>
+<aside class="side" data-photos="2,16" aria-hidden="true"></aside>
 </div>
 
 <footer id="contact">
