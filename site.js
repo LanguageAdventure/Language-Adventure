@@ -62,21 +62,37 @@
       "q6": "Can I play the demo early?",
       "q8": "How can I help?",
       "a5": "The release date hasn't been announced yet. Add it to your Steam wishlist to be notified when it's out.",
-      "a6": "Yes! Just send me an email and ask. Here's how it works:",
+      "a6": "Yes! Just fill in a short form and ask. Here's how it works:",
       "demoLink": "Play the demo early",
       "a8": "There are lots of ways to help, from a small tip to simply sharing the trailer. Have a look at the support page:",
       "findTitle": "Find the game",
       "itchBtn": "See it on itch.io",
       "demoTitle": "Play the demo early!",
-      "demoP1": "Want to try Language Adventure before everyone else? Great! You don't have to fill anything out. Just click the button below and send the email as it is.",
-      "demoP2": "If you'd like to help, I'd love to hear your feedback after you play, including any mistakes or bugs you spot. The email has a short list of optional questions you can answer, or just delete.",
-      "demoBtn": "Email me for the demo",
-      "previewTitle": "This is the email you'll send",
-      "prevTo": "To",
-      "prevSubject": "Subject",
-      "demoNote": "Your email app will open with all of this filled in, ready to send.",
+      "demoP1": "Want to try Language Adventure before everyone else? Great! All I need is your email address so I know where to send the demo. Everything else is optional.",
+      "demoP2": "If you'd like to help, I'd love to hear your feedback after you play, including any mistakes or bugs you spot. The form has a few optional questions you can answer or skip.",
+      "demoBtn": "Send my request",
       "demoSubject": "Please send me the demo early.",
-      "demoBody": "Hello!\n\nPlease send me the demo early.\n\nEverything below is optional. Fill in what you like, or just send this email as it is.\n\n- Name:\n- Languages I speak:\n- Subtitle language I'd like to use:\n- My English level (beginner / intermediate / advanced / not sure):\n- My computer (Windows / Mac / Linux):\n- Happy to send feedback and report mistakes? (yes / no):\n- Anything else you'd like to tell me:\n\nThank you!\n\n(Sent from the website in English)"
+      "fName": "Name",
+      "fEmail": "Your email address (so I know where to send the demo)",
+      "fLangs": "Languages I speak",
+      "fSub": "Subtitle language I'd like to use",
+      "fLevel": "My English level",
+      "choose": "Choose…",
+      "lvl1": "Beginner",
+      "lvl2": "Intermediate",
+      "lvl3": "Advanced",
+      "lvl4": "Not sure",
+      "fComputer": "My computer",
+      "osOther": "Other",
+      "fFeedback": "Happy to send feedback and report mistakes?",
+      "yes": "Yes",
+      "no": "No",
+      "fExtra": "Anything else you'd like to tell me",
+      "optional": "(optional)",
+      "formSending": "Sending…",
+      "formOk": "Thank you! I've got your request and will be in touch soon.",
+      "formErr": "Sorry, something went wrong. Please try again in a moment.",
+      "langName": "English"
     },
     "fr": {
       "tagline": "Un jeu d'aventure en stop motion pour apprendre une langue.",
@@ -140,21 +156,37 @@
       "q6": "Puis-je jouer à la démo en avance ?",
       "q8": "Comment puis-je aider ?",
       "a5": "La date de sortie n'a pas encore été annoncée. Ajoutez le jeu à votre liste de souhaits Steam pour être prévenu(e) de sa sortie.",
-      "a6": "Oui ! Il suffit de m'envoyer un e-mail pour la demander. Voici comment faire :",
+      "a6": "Oui ! Il suffit de remplir un court formulaire. Voici comment faire :",
       "demoLink": "Jouer à la démo en avance",
       "a8": "Il y a plein de façons d'aider, d'un petit pourboire au simple partage de la bande-annonce. Rendez-vous sur la page de soutien :",
       "findTitle": "Trouvez le jeu",
       "itchBtn": "Voir sur itch.io",
       "demoTitle": "Jouez à la démo en avance !",
-      "demoP1": "Envie d'essayer Language Adventure avant tout le monde ? Parfait ! Vous n'avez rien à remplir. Cliquez simplement sur le bouton ci-dessous et envoyez l'e-mail tel quel.",
-      "demoP2": "Si vous voulez aider, j'adorerais avoir votre avis après avoir joué, y compris les erreurs ou bugs repérés. L'e-mail contient une courte liste de questions facultatives auxquelles vous pouvez répondre, ou que vous pouvez simplement supprimer.",
-      "demoBtn": "Écrivez-moi pour la démo",
-      "previewTitle": "Voici l'e-mail que vous enverrez",
-      "prevTo": "À",
-      "prevSubject": "Objet",
-      "demoNote": "Votre application de messagerie s'ouvre avec ce texte déjà rempli, prêt à envoyer.",
+      "demoP1": "Envie d'essayer Language Adventure avant tout le monde ? Parfait ! Il me suffit de votre adresse e-mail pour savoir où envoyer la démo. Tout le reste est facultatif.",
+      "demoP2": "Si vous voulez aider, j'adorerais avoir votre avis après avoir joué, y compris les erreurs ou bugs repérés. Le formulaire contient quelques questions facultatives auxquelles vous pouvez répondre ou que vous pouvez ignorer.",
+      "demoBtn": "Envoyer ma demande",
       "demoSubject": "Envoyez-moi la démo en avance, s'il vous plaît.",
-      "demoBody": "Bonjour !\n\nEnvoyez-moi la démo en avance, s'il vous plaît.\n\nTout ce qui suit est facultatif. Remplissez ce que vous voulez, ou envoyez simplement cet e-mail tel quel.\n\n- Nom :\n- Langues que je parle :\n- Langue des sous-titres souhaitée :\n- Mon niveau d'anglais (débutant / intermédiaire / avancé / je ne sais pas) :\n- Mon ordinateur (Windows / Mac / Linux) :\n- Je veux bien donner mon avis et signaler les erreurs ? (oui / non) :\n- Autre chose à me dire :\n\nMerci !\n\n(Envoyé depuis le site en français)"
+      "fName": "Nom",
+      "fEmail": "Votre adresse e-mail (pour savoir où envoyer la démo)",
+      "fLangs": "Langues que je parle",
+      "fSub": "Langue des sous-titres souhaitée",
+      "fLevel": "Mon niveau d'anglais",
+      "choose": "Choisir…",
+      "lvl1": "Débutant",
+      "lvl2": "Intermédiaire",
+      "lvl3": "Avancé",
+      "lvl4": "Je ne sais pas",
+      "fComputer": "Mon ordinateur",
+      "osOther": "Autre",
+      "fFeedback": "Je veux bien donner mon avis et signaler les erreurs ?",
+      "yes": "Oui",
+      "no": "Non",
+      "fExtra": "Autre chose à me dire",
+      "optional": "(facultatif)",
+      "formSending": "Envoi…",
+      "formOk": "Merci ! J'ai bien reçu votre demande et je reviens vers vous bientôt.",
+      "formErr": "Désolé, un problème est survenu. Veuillez réessayer dans un instant.",
+      "langName": "Français"
     },
     "es": {
       "tagline": "Una aventura de aprendizaje de idiomas en stop motion.",
@@ -218,21 +250,37 @@
       "q6": "¿Puedo jugar la demo antes de tiempo?",
       "q8": "¿Cómo puedo ayudar?",
       "a5": "Aún no se ha anunciado la fecha de lanzamiento. Añádelo a tu lista de deseos de Steam para que te avise cuando salga.",
-      "a6": "¡Sí! Solo tienes que enviarme un correo para pedirla. Así funciona:",
+      "a6": "¡Sí! Solo tienes que rellenar un breve formulario. Así funciona:",
       "demoLink": "Jugar la demo antes de tiempo",
       "a8": "Hay muchas formas de ayudar, desde una pequeña propina hasta simplemente compartir el tráiler. Echa un vistazo a la página de apoyo:",
       "findTitle": "Encuentra el juego",
       "itchBtn": "Ver en itch.io",
       "demoTitle": "¡Juega la demo antes de tiempo!",
-      "demoP1": "¿Quieres probar Language Adventure antes que nadie? ¡Genial! No tienes que rellenar nada. Solo haz clic en el botón de abajo y envía el correo tal cual.",
-      "demoP2": "Si quieres ayudar, me encantaría conocer tu opinión después de jugar, incluidos los errores que encuentres. El correo incluye una breve lista de preguntas opcionales que puedes responder o simplemente borrar.",
-      "demoBtn": "Escríbeme para pedir la demo",
-      "previewTitle": "Este es el correo que enviarás",
-      "prevTo": "Para",
-      "prevSubject": "Asunto",
-      "demoNote": "Tu aplicación de correo se abrirá con todo esto ya escrito, lista para enviar.",
+      "demoP1": "¿Quieres probar Language Adventure antes que nadie? ¡Genial! Solo necesito tu correo electrónico para saber dónde enviarte la demo. Todo lo demás es opcional.",
+      "demoP2": "Si quieres ayudar, me encantaría conocer tu opinión después de jugar, incluidos los errores que encuentres. El formulario incluye algunas preguntas opcionales que puedes responder u omitir.",
+      "demoBtn": "Enviar mi solicitud",
       "demoSubject": "Por favor, envíame la demo antes de tiempo.",
-      "demoBody": "¡Hola!\n\nPor favor, envíame la demo antes de tiempo.\n\nTodo lo que sigue es opcional. Rellena lo que quieras o envía este correo tal cual.\n\n- Nombre:\n- Idiomas que hablo:\n- Idioma de subtítulos que prefiero:\n- Mi nivel de inglés (principiante / intermedio / avanzado / no lo sé):\n- Mi ordenador (Windows / Mac / Linux):\n- ¿Te envío mis comentarios y los errores que encuentre? (sí / no):\n- Algo más que quieras contarme:\n\n¡Gracias!\n\n(Enviado desde la web en español)"
+      "fName": "Nombre",
+      "fEmail": "Tu correo electrónico (para saber dónde enviarte la demo)",
+      "fLangs": "Idiomas que hablo",
+      "fSub": "Idioma de subtítulos que prefiero",
+      "fLevel": "Mi nivel de inglés",
+      "choose": "Elegir…",
+      "lvl1": "Principiante",
+      "lvl2": "Intermedio",
+      "lvl3": "Avanzado",
+      "lvl4": "No lo sé",
+      "fComputer": "Mi ordenador",
+      "osOther": "Otro",
+      "fFeedback": "¿Te envío mis comentarios y los errores que encuentre?",
+      "yes": "Sí",
+      "no": "No",
+      "fExtra": "Algo más que quieras contarme",
+      "optional": "(opcional)",
+      "formSending": "Enviando…",
+      "formOk": "¡Gracias! He recibido tu solicitud y te escribiré pronto.",
+      "formErr": "Lo siento, algo ha salido mal. Inténtalo de nuevo en un momento.",
+      "langName": "Español"
     },
     "pt": {
       "tagline": "Uma aventura de aprendizagem de línguas em stop motion.",
@@ -296,21 +344,37 @@
       "q6": "Posso jogar a demo antecipadamente?",
       "q8": "Como posso ajudar?",
       "a5": "A data de lançamento ainda não foi anunciada. Adicione-o à sua lista de desejos na Steam para ser avisado quando sair.",
-      "a6": "Sim! Basta enviar-me um e-mail a pedir. Veja como funciona:",
+      "a6": "Sim! Basta preencher um breve formulário. Veja como funciona:",
       "demoLink": "Jogar a demo antecipadamente",
       "a8": "Há muitas formas de ajudar, desde uma pequena gorjeta até simplesmente partilhar o trailer. Veja a página de apoio:",
       "findTitle": "Encontre o jogo",
       "itchBtn": "Ver no itch.io",
       "demoTitle": "Jogue a demo antecipadamente!",
-      "demoP1": "Quer experimentar o Language Adventure antes de todos? Ótimo! Não precisa de preencher nada. Basta clicar no botão abaixo e enviar o e-mail tal como está.",
-      "demoP2": "Se quiser ajudar, adoraria saber a sua opinião depois de jogar, incluindo erros ou bugs que encontre. O e-mail inclui uma pequena lista de perguntas opcionais a que pode responder, ou simplesmente apagar.",
-      "demoBtn": "Escreva-me para pedir a demo",
-      "previewTitle": "Este é o e-mail que vai enviar",
-      "prevTo": "Para",
-      "prevSubject": "Assunto",
-      "demoNote": "A sua aplicação de e-mail abrirá com tudo isto já preenchido, pronto a enviar.",
+      "demoP1": "Quer experimentar o Language Adventure antes de todos? Ótimo! Só preciso do seu e-mail para saber para onde enviar a demo. Tudo o resto é opcional.",
+      "demoP2": "Se quiser ajudar, adoraria saber a sua opinião depois de jogar, incluindo erros ou bugs que encontre. O formulário inclui algumas perguntas opcionais a que pode responder ou ignorar.",
+      "demoBtn": "Enviar o meu pedido",
       "demoSubject": "Por favor, envie-me a demo antecipadamente.",
-      "demoBody": "Olá!\n\nPor favor, envie-me a demo antecipadamente.\n\nTudo o que se segue é opcional. Preencha o que quiser ou envie este e-mail tal como está.\n\n- Nome:\n- Línguas que falo:\n- Língua das legendas que prefiro:\n- O meu nível de inglês (principiante / intermédio / avançado / não sei):\n- O meu computador (Windows / Mac / Linux):\n- Posso enviar comentários e reportar erros? (sim / não):\n- Mais alguma coisa que queira dizer-me:\n\nObrigado!\n\n(Enviado a partir do site em português)"
+      "fName": "Nome",
+      "fEmail": "O seu e-mail (para saber para onde enviar a demo)",
+      "fLangs": "Línguas que falo",
+      "fSub": "Língua das legendas que prefiro",
+      "fLevel": "O meu nível de inglês",
+      "choose": "Escolher…",
+      "lvl1": "Principiante",
+      "lvl2": "Intermédio",
+      "lvl3": "Avançado",
+      "lvl4": "Não sei",
+      "fComputer": "O meu computador",
+      "osOther": "Outro",
+      "fFeedback": "Posso enviar comentários e reportar erros?",
+      "yes": "Sim",
+      "no": "Não",
+      "fExtra": "Mais alguma coisa que queira dizer-me",
+      "optional": "(opcional)",
+      "formSending": "A enviar…",
+      "formOk": "Obrigado! Recebi o seu pedido e entro em contacto em breve.",
+      "formErr": "Desculpe, algo correu mal. Tente novamente daqui a pouco.",
+      "langName": "Português"
     },
     "de": {
       "tagline": "Ein Stop-Motion-Abenteuer zum Sprachenlernen.",
@@ -374,21 +438,37 @@
       "q6": "Kann ich die Demo vorab spielen?",
       "q8": "Wie kann ich helfen?",
       "a5": "Das Erscheinungsdatum wurde noch nicht bekannt gegeben. Setz das Spiel auf deine Steam-Wunschliste, um benachrichtigt zu werden, sobald es erscheint.",
-      "a6": "Ja! Schreib mir einfach eine E-Mail. So geht's:",
+      "a6": "Ja! Füll einfach ein kurzes Formular aus. So geht's:",
       "demoLink": "Die Demo vorab spielen",
       "a8": "Es gibt viele Möglichkeiten zu helfen, vom kleinen Trinkgeld bis zum einfachen Teilen des Trailers. Wirf einen Blick auf die Unterstützungsseite:",
       "findTitle": "Finde das Spiel",
       "itchBtn": "Auf itch.io ansehen",
       "demoTitle": "Spiel die Demo vorab!",
-      "demoP1": "Du willst Language Adventure vor allen anderen ausprobieren? Super! Du musst nichts ausfüllen. Klick einfach auf den Button unten und schick die E-Mail so ab, wie sie ist.",
-      "demoP2": "Wenn du helfen möchtest, freue ich mich über dein Feedback nach dem Spielen, auch über Fehler oder Bugs, die dir auffallen. Die E-Mail enthält eine kurze Liste optionaler Fragen, die du beantworten oder einfach löschen kannst.",
-      "demoBtn": "Schreib mir für die Demo",
-      "previewTitle": "So sieht deine E-Mail aus",
-      "prevTo": "An",
-      "prevSubject": "Betreff",
-      "demoNote": "Deine E-Mail-App öffnet sich mit diesem Text bereits ausgefüllt, bereit zum Senden.",
+      "demoP1": "Du willst Language Adventure vor allen anderen ausprobieren? Super! Ich brauche nur deine E-Mail-Adresse, damit ich weiß, wohin ich die Demo schicken soll. Alles andere ist freiwillig.",
+      "demoP2": "Wenn du helfen möchtest, freue ich mich über dein Feedback nach dem Spielen, auch über Fehler oder Bugs, die dir auffallen. Das Formular enthält ein paar optionale Fragen, die du beantworten oder überspringen kannst.",
+      "demoBtn": "Anfrage senden",
       "demoSubject": "Bitte schick mir die Demo vorab.",
-      "demoBody": "Hallo!\n\nBitte schick mir die Demo vorab.\n\nAlles Folgende ist freiwillig. Füll aus, was du magst, oder schick diese E-Mail einfach so ab.\n\n- Name:\n- Sprachen, die ich spreche:\n- Gewünschte Untertitelsprache:\n- Mein Englischniveau (Anfänger / mit Vorkenntnissen / fortgeschritten / weiß nicht):\n- Mein Computer (Windows / Mac / Linux):\n- Darf ich Feedback schicken und Fehler melden? (ja / nein):\n- Sonst noch etwas, das du mir sagen möchtest:\n\nDanke!\n\n(Gesendet von der Website auf Deutsch)"
+      "fName": "Name",
+      "fEmail": "Deine E-Mail-Adresse (damit ich dir die Demo schicken kann)",
+      "fLangs": "Sprachen, die ich spreche",
+      "fSub": "Gewünschte Untertitelsprache",
+      "fLevel": "Mein Englischniveau",
+      "choose": "Auswählen…",
+      "lvl1": "Anfänger",
+      "lvl2": "Mit Vorkenntnissen",
+      "lvl3": "Fortgeschritten",
+      "lvl4": "Weiß nicht",
+      "fComputer": "Mein Computer",
+      "osOther": "Andere",
+      "fFeedback": "Darf ich Feedback schicken und Fehler melden?",
+      "yes": "Ja",
+      "no": "Nein",
+      "fExtra": "Sonst noch etwas, das du mir sagen möchtest",
+      "optional": "(freiwillig)",
+      "formSending": "Wird gesendet…",
+      "formOk": "Danke! Ich habe deine Anfrage erhalten und melde mich bald.",
+      "formErr": "Entschuldigung, etwas ist schiefgelaufen. Bitte versuch es gleich noch einmal.",
+      "langName": "Deutsch"
     },
     "it": {
       "tagline": "Un'avventura in stop motion per imparare le lingue.",
@@ -452,21 +532,37 @@
       "q6": "Posso giocare la demo in anteprima?",
       "q8": "Come posso aiutare?",
       "a5": "La data di uscita non è ancora stata annunciata. Aggiungilo alla tua lista dei desideri su Steam per essere avvisato quando esce.",
-      "a6": "Sì! Basta scrivermi un'e-mail per chiederla. Ecco come fare:",
+      "a6": "Sì! Basta compilare un breve modulo. Ecco come fare:",
       "demoLink": "Giocare la demo in anteprima",
       "a8": "Ci sono tanti modi per aiutare, da una piccola mancia alla semplice condivisione del trailer. Dai un'occhiata alla pagina di sostegno:",
       "findTitle": "Trova il gioco",
       "itchBtn": "Vedi su itch.io",
       "demoTitle": "Gioca la demo in anteprima!",
-      "demoP1": "Vuoi provare Language Adventure prima di tutti? Fantastico! Non devi compilare nulla. Basta cliccare sul pulsante qui sotto e inviare l'e-mail così com'è.",
-      "demoP2": "Se vuoi aiutare, mi farebbe piacere ricevere il tuo parere dopo aver giocato, compresi errori o bug che trovi. L'e-mail contiene un breve elenco di domande facoltative a cui puoi rispondere, o che puoi semplicemente cancellare.",
-      "demoBtn": "Scrivimi per la demo",
-      "previewTitle": "Ecco l'e-mail che invierai",
-      "prevTo": "A",
-      "prevSubject": "Oggetto",
-      "demoNote": "La tua app di posta si aprirà con tutto già compilato, pronta per l'invio.",
+      "demoP1": "Vuoi provare Language Adventure prima di tutti? Fantastico! Mi serve solo il tuo indirizzo e-mail per sapere dove inviarti la demo. Tutto il resto è facoltativo.",
+      "demoP2": "Se vuoi aiutare, mi farebbe piacere ricevere il tuo parere dopo aver giocato, compresi errori o bug che trovi. Il modulo contiene alcune domande facoltative a cui puoi rispondere o che puoi saltare.",
+      "demoBtn": "Invia la mia richiesta",
       "demoSubject": "Per favore, mandami la demo in anteprima.",
-      "demoBody": "Ciao!\n\nPer favore, mandami la demo in anteprima.\n\nTutto ciò che segue è facoltativo. Compila quello che vuoi oppure invia questa e-mail così com'è.\n\n- Nome:\n- Lingue che parlo:\n- Lingua dei sottotitoli che preferisco:\n- Il mio livello di inglese (principiante / intermedio / avanzato / non so):\n- Il mio computer (Windows / Mac / Linux):\n- Posso mandarti commenti e segnalare errori? (sì / no):\n- Qualcos'altro che vuoi dirmi:\n\nGrazie!\n\n(Inviato dal sito in italiano)"
+      "fName": "Nome",
+      "fEmail": "La tua e-mail (così so dove inviarti la demo)",
+      "fLangs": "Lingue che parlo",
+      "fSub": "Lingua dei sottotitoli che preferisco",
+      "fLevel": "Il mio livello di inglese",
+      "choose": "Scegli…",
+      "lvl1": "Principiante",
+      "lvl2": "Intermedio",
+      "lvl3": "Avanzato",
+      "lvl4": "Non so",
+      "fComputer": "Il mio computer",
+      "osOther": "Altro",
+      "fFeedback": "Posso mandarti commenti e segnalare errori?",
+      "yes": "Sì",
+      "no": "No",
+      "fExtra": "Qualcos'altro che vuoi dirmi",
+      "optional": "(facoltativo)",
+      "formSending": "Invio in corso…",
+      "formOk": "Grazie! Ho ricevuto la tua richiesta e ti scriverò presto.",
+      "formErr": "Spiacente, qualcosa è andato storto. Riprova tra un momento.",
+      "langName": "Italiano"
     }
   };
 
@@ -493,6 +589,7 @@
   var buttons = nav.querySelectorAll('button');
   var nodes = document.querySelectorAll('[data-i18n]');
   var figures = [];
+  var cur = 'en';
 
   document.querySelectorAll('.side[data-photos]').forEach(function (side) {
     side.getAttribute('data-photos').split(',').forEach(function (n) {
@@ -531,17 +628,50 @@
       f.fig.hidden = false;
       if (f.img.getAttribute('src') !== p) f.img.src = p;
     });
-    var mail = 'mailto:gameswonky@gmail.com?subject=' + encodeURIComponent(T[l].demoSubject) +
-      '&body=' + encodeURIComponent(T[l].demoBody).replace(/%0A/g, '%0D%0A');
-    document.querySelectorAll('a[data-mailto="demo"]').forEach(function (a) { a.href = mail; });
-    document.querySelectorAll('[data-preview="subject"]').forEach(function (n) { n.textContent = T[l].demoSubject; });
-    document.querySelectorAll('[data-preview="body"]').forEach(function (n) { n.textContent = T[l].demoBody; });
+    cur = l;
     try { localStorage.setItem('la-lang', l); } catch (e) {}
   }
 
   buttons.forEach(function (b) {
     b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
   });
+
+
+  // Demo request form (sent by FormSubmit to the site owner's inbox)
+  var form = document.getElementById('demo-form');
+  if (form) {
+    var status = document.getElementById('form-status');
+    var btn = form.querySelector('button[type="submit"]');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = {};
+      new FormData(form).forEach(function (v, k) { data[k] = v; });
+      if (data._honey) return;
+      data._subject = T[cur].demoSubject;
+      data._template = 'table';
+      data._captcha = 'false';
+      data.website_language = T[cur].langName;
+      btn.disabled = true;
+      status.textContent = T[cur].formSending;
+      fetch('https://formsubmit.co/ajax/gameswonky@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function (r) {
+        if (!r.ok) throw new Error('bad status');
+        return r.json();
+      }).then(function (j) {
+        if (j && (j.success === true || j.success === 'true')) {
+          form.hidden = true;
+          status.textContent = T[cur].formOk;
+          status.className = 'note ok';
+        } else { throw new Error('rejected'); }
+      }).catch(function () {
+        btn.disabled = false;
+        status.textContent = T[cur].formErr;
+      });
+    });
+  }
 
   var start = '';
   try { start = localStorage.getItem('la-lang') || ''; } catch (e) {}

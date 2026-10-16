@@ -169,13 +169,22 @@
   details.faq .ans h3 { margin-top: 14px; }
   .ans .ai-close { margin-top: 14px; }
 
-  /* Demo page email preview */
-  .email { background: #fff; border: 1px solid rgba(0,0,0,.35); box-shadow: 0 2px 6px rgba(0,0,0,.2); margin: 14px 0 6px; text-align: left; }
-  .email .meta { padding: 12px 16px; background: #f1f1f1; border-bottom: 1px solid #ddd; font-size: .98rem; }
-  .email .meta div { margin: 2px 0; }
-  .email .meta b { display: inline-block; min-width: 4.5em; }
-  .email pre { margin: 0; padding: 16px; white-space: pre-wrap; word-wrap: break-word; font-family: 'Nunito', system-ui, sans-serif; font-size: 1rem; line-height: 1.6; }
   .center { text-align: center; }
   .note { text-align: center; font-size: .95rem; opacity: .85; margin: 6px 0 0; }
 
   @media (max-width: 720px) { .feature-list { grid-template-columns: 1fr; } }
+
+  /* Demo request form */
+  .demo-form { margin-top: 26px; }
+  .demo-form[hidden] { display: none; }
+  .fld { display: block; margin: 0 0 16px; font-weight: 800; }
+  .fld em { font-style: normal; font-weight: 400; opacity: .75; }
+  .fld input, .fld select, .fld textarea {
+    display: block; width: 100%; margin-top: 6px; padding: 11px 12px; font: inherit; font-weight: 400; color: var(--ink);
+    background: #fffdf2; border: 2px solid var(--ink); border-radius: 8px;
+  }
+  .fld input:focus-visible, .fld select:focus-visible, .fld textarea:focus-visible { outline: 3px solid #fff; outline-offset: 1px; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .demo-form .btn { border: 0; cursor: pointer; font-family: inherit; }
+  .demo-form .btn:disabled { opacity: .6; cursor: wait; }
+  .note.ok { font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 700; font-size: 1.4rem; opacity: 1; }

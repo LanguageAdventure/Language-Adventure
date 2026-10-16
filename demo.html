@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261017">
 <title>Play the demo early | Language Adventure</title>
 <meta name="description" content="Ask to play the Language Adventure demo early. No forms to fill in, just send an email.">
 </head>
@@ -31,19 +31,44 @@
   <h1 class="page-title" data-i18n="demoTitle">Play the demo early!</h1>
   <p data-i18n="demoP1"></p>
   <p data-i18n="demoP2"></p>
-  <p class="center" style="margin-top:22px"><a class="btn" href="mailto:gameswonky@gmail.com" data-mailto="demo" data-i18n="demoBtn">Email me for the demo</a></p>
 
-  <section aria-labelledby="preview-h" style="margin-top:36px">
-    <h2 id="preview-h" class="center" data-i18n="previewTitle">This is the email you'll send</h2>
-    <div class="email">
-      <div class="meta">
-        <div><b data-i18n="prevTo">To</b> gameswonky@gmail.com</div>
-        <div><b data-i18n="prevSubject">Subject</b> <span data-preview="subject"></span></div>
-      </div>
-      <pre data-preview="body"></pre>
-    </div>
-    <p class="note" data-i18n="demoNote"></p>
-  </section>
+  <form id="demo-form" class="demo-form" action="#" method="post">
+    <label class="fld"><span data-i18n="fEmail">Your email address (so I know where to send the demo)</span>
+      <input type="email" name="email" required autocomplete="email"></label>
+    <label class="fld"><span><span data-i18n="fName">Name</span> <em data-i18n="optional">(optional)</em></span>
+      <input type="text" name="name" autocomplete="name"></label>
+    <label class="fld"><span><span data-i18n="fLangs">Languages I speak</span> <em data-i18n="optional">(optional)</em></span>
+      <input type="text" name="languages_spoken"></label>
+    <label class="fld"><span><span data-i18n="fSub">Subtitle language I'd like to use</span> <em data-i18n="optional">(optional)</em></span>
+      <input type="text" name="subtitle_language"></label>
+    <label class="fld"><span><span data-i18n="fLevel">My English level</span> <em data-i18n="optional">(optional)</em></span>
+      <select name="english_level">
+        <option value="" data-i18n="choose">Choose…</option>
+        <option value="Beginner" data-i18n="lvl1">Beginner</option>
+        <option value="Intermediate" data-i18n="lvl2">Intermediate</option>
+        <option value="Advanced" data-i18n="lvl3">Advanced</option>
+        <option value="Not sure" data-i18n="lvl4">Not sure</option>
+      </select></label>
+    <label class="fld"><span><span data-i18n="fComputer">My computer</span> <em data-i18n="optional">(optional)</em></span>
+      <select name="computer">
+        <option value="" data-i18n="choose">Choose…</option>
+        <option value="Windows">Windows</option>
+        <option value="Mac">Mac</option>
+        <option value="Linux">Linux</option>
+        <option value="Other" data-i18n="osOther">Other</option>
+      </select></label>
+    <label class="fld"><span><span data-i18n="fFeedback">Happy to send feedback and report mistakes?</span> <em data-i18n="optional">(optional)</em></span>
+      <select name="happy_to_give_feedback">
+        <option value="" data-i18n="choose">Choose…</option>
+        <option value="Yes" data-i18n="yes">Yes</option>
+        <option value="No" data-i18n="no">No</option>
+      </select></label>
+    <label class="fld"><span><span data-i18n="fExtra">Anything else you'd like to tell me</span> <em data-i18n="optional">(optional)</em></span>
+      <textarea name="message" rows="4"></textarea></label>
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <p class="center"><button class="btn" type="submit" data-i18n="demoBtn">Send my request</button></p>
+  </form>
+  <p id="form-status" class="note" role="status" aria-live="polite"></p>
 </main>
 <aside class="side" data-photos="14,5" aria-hidden="true"></aside>
 </div>
@@ -55,6 +80,6 @@
   <p class="small">&copy; <span id="year"></span> Wonky Games. <span data-i18n="rights">All rights reserved.</span></p>
 </footer>
 
-<script src="site.js"></script>
+<script src="site.js?v=20261017"></script>
 </body>
 </html>
