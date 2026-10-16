@@ -30,6 +30,12 @@
     line-height: 1.65;
   }
   h1, h2, h3 { font-family: 'Fredoka', 'Nunito', system-ui, sans-serif; font-weight: 700; line-height: 1.2; }
+  h2, h3 {
+    color: #fff;
+    -webkit-text-stroke: 1.5px #000;
+    paint-order: stroke fill;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  }
   h2 { font-size: clamp(1.7rem, 4vw, 2.3rem); margin: 0 0 14px; }
   h3 { font-size: 1.3rem; margin: 0 0 6px; }
   a { color: inherit; }
@@ -63,11 +69,10 @@
   .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
   /* Cards and layout */
-  .card { background: var(--card); border-radius: 20px; padding: 24px; box-shadow: 0 4px 12px rgba(0,0,0,.12); }
+  .card { padding: 0; }
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
   .shot { width: 100%; height: auto; border-radius: 16px; border: 4px solid var(--ink); display: block; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
-  .grid .card { padding: 20px; }
   .grid p { margin: 0; }
 
   dl { margin: 0 0 18px; display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; }
@@ -82,10 +87,8 @@
   .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
 
   /* Playtesters call-out */
-  .callout { background: var(--ink); color: #FFF6D6; border-radius: 24px; padding: 34px 24px; text-align: center; }
-  .callout h2 { color: var(--yellow); }
+  .callout { text-align: center; }
   .callout p { max-width: 620px; margin: 0 auto 20px; }
-  .callout .btn { background: var(--yellow); color: var(--ink); }
 
   footer { text-align: center; padding: 40px 18px 36px; }
   footer p { margin: 6px 0; }
