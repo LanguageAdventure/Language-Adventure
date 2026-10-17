@@ -637,8 +637,8 @@
   if (y) y.textContent = new Date().getFullYear();
   setLang(start);
 
-  // Ko-fi floating "Support" button (not on the support page, which has the full widget)
-  if (!/support\.html/.test(location.pathname)) {
+  // Ko-fi floating "Support" button
+  {
     var kf = document.createElement('script');
     kf.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
     kf.async = true;
