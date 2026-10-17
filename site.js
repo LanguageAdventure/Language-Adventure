@@ -631,6 +631,7 @@
 
   var start = '';
   try { start = localStorage.getItem('la-lang') || ''; } catch (e) {}
+  try { var q = new URLSearchParams(location.search).get('lang'); if (q) start = q.toLowerCase().slice(0, 2); } catch (e) {}
   if (!start) start = (navigator.language || 'en').slice(0, 2).toLowerCase();
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
