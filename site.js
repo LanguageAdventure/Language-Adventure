@@ -3,7 +3,7 @@
     "en": {
       "tagline": "A stop motion animated language learning game.",
       "aboutTitle": "About the game",
-      "aboutP1": "<strong>Learn English</strong> in a handmade town by interacting with objects and characters in stop motion animated scenes. Talk to the characters and discover how words work in real situations.",
+      "aboutP1": "Learn <strong>English</strong> in a handmade town by interacting with objects and characters in stop motion animated scenes. Talk to the characters and discover how words work in real situations.",
       "aboutP2": "When an alien spaceship crash-lands in your garden you must learn to communicate with them and help them return home!",
       "playtestTitle": "Would you like to play the demo early?",
       "playtestBtn": "Click here",
@@ -69,13 +69,13 @@
       "kofiTitle": "Buy me some plasticine on Ko-fi",
       "f1d": "Every scene is handmade and brought to life frame by frame in stop motion.",
       "f2d": "A point and click adventure: solve logical puzzles and explore a (very) small town!",
-      "f3d": "Pick up vocabulary through conversation and play. A game for all ages, suitable for beginners and intermediate learners.",
+      "f3d": "Suitable for all ages",
       "f4d": "Follow the story with subtitles in French, Spanish, Portuguese, German, Italian and more."
     },
     "fr": {
       "tagline": "Un jeu d'apprentissage des langues animé en stop motion.",
       "aboutTitle": "À propos du jeu",
-      "aboutP1": "<strong>Apprenez l'anglais</strong> dans une ville faite à la main en interagissant avec des objets et des personnages dans des scènes animées en stop motion. Parlez aux personnages et découvrez comment les mots fonctionnent dans des situations réelles.",
+      "aboutP1": "Apprenez l'<strong>anglais</strong> dans une ville faite à la main en interagissant avec des objets et des personnages dans des scènes animées en stop motion. Parlez aux personnages et découvrez comment les mots fonctionnent dans des situations réelles.",
       "aboutP2": "Lorsqu'un vaisseau spatial extraterrestre s'écrase dans votre jardin, vous devez apprendre à communiquer avec eux et les aider à rentrer chez eux !",
       "playtestTitle": "Envie de jouer à la démo en avance ?",
       "playtestBtn": "Cliquez ici",
@@ -141,13 +141,13 @@
       "kofiTitle": "Offrez-moi de la pâte à modeler sur Ko-fi",
       "f1d": "Chaque scène est faite à la main et prend vie image par image en stop motion.",
       "f2d": "Un jeu d'aventure point and click : résolvez des énigmes logiques et explorez une (toute) petite ville !",
-      "f3d": "Apprenez du vocabulaire par la conversation et le jeu. Un jeu pour tous les âges, qui convient aux débutants et aux apprenants de niveau intermédiaire.",
+      "f3d": "Convient à tous les âges",
       "f4d": "Suivez l'histoire avec des sous-titres en français, espagnol, portugais, allemand, italien et plus encore."
     },
     "es": {
       "tagline": "Un juego de aprendizaje de idiomas animado en stop motion.",
       "aboutTitle": "Sobre el juego",
-      "aboutP1": "<strong>Aprende inglés</strong> en una ciudad hecha a mano interactuando con objetos y personajes en escenas animadas en stop motion. Habla con los personajes y descubre cómo funcionan las palabras en situaciones reales.",
+      "aboutP1": "Aprende <strong>inglés</strong> en una ciudad hecha a mano interactuando con objetos y personajes en escenas animadas en stop motion. Habla con los personajes y descubre cómo funcionan las palabras en situaciones reales.",
       "aboutP2": "Cuando una nave espacial alienígena se estrella en tu jardín, ¡debes aprender a comunicarte con ellos y ayudarles a volver a casa!",
       "playtestTitle": "¿Quieres jugar la demo antes de tiempo?",
       "playtestBtn": "Haz clic aquí",
@@ -213,13 +213,13 @@
       "kofiTitle": "Cómprame plastilina en Ko-fi",
       "f1d": "Cada escena está hecha a mano y cobra vida fotograma a fotograma en stop motion.",
       "f2d": "Una aventura point and click: ¡resuelve puzles lógicos y explora un pueblo (muy) pequeño!",
-      "f3d": "Aprende vocabulario mediante la conversación y el juego. Un juego para todas las edades, adecuado para principiantes y estudiantes de nivel intermedio.",
+      "f3d": "Apto para todas las edades",
       "f4d": "Sigue la historia con subtítulos en francés, español, portugués, alemán, italiano y más."
     },
     "pt": {
       "tagline": "Um jogo de aprendizagem de línguas animado em stop motion.",
       "aboutTitle": "Sobre o jogo",
-      "aboutP1": "<strong>Aprenda inglês</strong> numa cidade feita à mão, interagindo com objetos e personagens em cenas animadas em stop motion. Fale com as personagens e descubra como as palavras funcionam em situações reais.",
+      "aboutP1": "Aprenda <strong>inglês</strong> numa cidade feita à mão, interagindo com objetos e personagens em cenas animadas em stop motion. Fale com as personagens e descubra como as palavras funcionam em situações reais.",
       "aboutP2": "Quando uma nave espacial alienígena cai no seu jardim, tem de aprender a comunicar com eles e ajudá-los a voltar para casa!",
       "playtestTitle": "Quer jogar a demo antecipadamente?",
       "playtestBtn": "Clique aqui",
@@ -285,13 +285,13 @@
       "kofiTitle": "Compre-me plasticina no Ko-fi",
       "f1d": "Cada cena é feita à mão e ganha vida fotograma a fotograma em stop motion.",
       "f2d": "Uma aventura point and click: resolva puzzles lógicos e explore uma pequena (muito pequena) cidade!",
-      "f3d": "Aprenda vocabulário através da conversa e do jogo. Um jogo para todas as idades, adequado para principiantes e estudantes de nível intermédio.",
+      "f3d": "Adequado a todas as idades",
       "f4d": "Acompanhe a história com legendas em francês, espanhol, português, alemão, italiano e mais."
     },
     "de": {
       "tagline": "Ein in Stop-Motion animiertes Sprachlernspiel.",
       "aboutTitle": "Über das Spiel",
-      "aboutP1": "<strong>Lerne Englisch</strong> in einer handgemachten Stadt, indem du mit Objekten und Figuren in Stop-Motion-animierten Szenen interagierst. Sprich mit den Figuren und entdecke, wie Wörter in echten Situationen funktionieren.",
+      "aboutP1": "Lerne <strong>Englisch</strong> in einer handgemachten Stadt, indem du mit Objekten und Figuren in Stop-Motion-animierten Szenen interagierst. Sprich mit den Figuren und entdecke, wie Wörter in echten Situationen funktionieren.",
       "aboutP2": "Wenn ein außerirdisches Raumschiff in deinem Garten abstürzt, musst du lernen, dich mit den Besuchern zu verständigen, und ihnen helfen, nach Hause zurückzukehren!",
       "playtestTitle": "Möchtest du die Demo vorab spielen?",
       "playtestBtn": "Hier klicken",
@@ -357,13 +357,13 @@
       "kofiTitle": "Spendier mir Knete auf Ko-fi",
       "f1d": "Jede Szene ist handgemacht und wird Bild für Bild in Stop-Motion zum Leben erweckt.",
       "f2d": "Ein Point-and-Click-Adventure: Löse logische Rätsel und erkunde eine (sehr) kleine Stadt!",
-      "f3d": "Lerne Vokabeln durch Gespräche und Spiel. Ein Spiel für alle Altersgruppen, geeignet für Anfänger und Lernende der Mittelstufe.",
+      "f3d": "Für alle Altersgruppen geeignet",
       "f4d": "Verfolge die Geschichte mit Untertiteln auf Französisch, Spanisch, Portugiesisch, Deutsch, Italienisch und mehr."
     },
     "it": {
       "tagline": "Un gioco per imparare le lingue animato in stop motion.",
       "aboutTitle": "Informazioni sul gioco",
-      "aboutP1": "<strong>Impara l'inglese</strong> in una città fatta a mano interagendo con oggetti e personaggi in scene animate in stop motion. Parla con i personaggi e scopri come funzionano le parole in situazioni reali.",
+      "aboutP1": "Impara l'<strong>inglese</strong> in una città fatta a mano interagendo con oggetti e personaggi in scene animate in stop motion. Parla con i personaggi e scopri come funzionano le parole in situazioni reali.",
       "aboutP2": "Quando un'astronave aliena precipita nel tuo giardino, devi imparare a comunicare con loro e aiutarli a tornare a casa!",
       "playtestTitle": "Vuoi giocare la demo in anteprima?",
       "playtestBtn": "Clicca qui",
@@ -429,7 +429,7 @@
       "kofiTitle": "Regalami della plastilina su Ko-fi",
       "f1d": "Ogni scena è fatta a mano e prende vita fotogramma dopo fotogramma in stop motion.",
       "f2d": "Un'avventura point and click: risolvi enigmi logici ed esplora una cittadina (molto) piccola!",
-      "f3d": "Impara il vocabolario attraverso la conversazione e il gioco. Un gioco per tutte le età, adatto a principianti e studenti di livello intermedio.",
+      "f3d": "Adatto a tutte le età",
       "f4d": "Segui la storia con sottotitoli in francese, spagnolo, portoghese, tedesco, italiano e altro."
     }
   };
@@ -455,6 +455,14 @@
   var nav = document.getElementById('flags');
   nav.innerHTML = "<button type=\"button\" data-lang=\"en\" aria-label=\"English\" title=\"English\"><svg viewBox=\"0 0 60 30\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><clipPath id=\"s\"><path d=\"M0,0 v30 h60 v-30 z\"/></clipPath><clipPath id=\"t\"><path d=\"M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z\"/></clipPath><g clip-path=\"url(#s)\"><path d=\"M0,0 v30 h60 v-30 z\" fill=\"#012169\"/><path d=\"M0,0 L60,30 M60,0 L0,30\" stroke=\"#fff\" stroke-width=\"6\"/><path d=\"M0,0 L60,30 M60,0 L0,30\" clip-path=\"url(#t)\" stroke=\"#C8102E\" stroke-width=\"4\"/><path d=\"M30,0 v30 M0,15 h60\" stroke=\"#fff\" stroke-width=\"10\"/><path d=\"M30,0 v30 M0,15 h60\" stroke=\"#C8102E\" stroke-width=\"6\"/></g></svg></button><button type=\"button\" data-lang=\"fr\" aria-label=\"Fran\u00e7ais\" title=\"Fran\u00e7ais\"><svg viewBox=\"0 0 30 20\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><rect width=\"10\" height=\"20\" fill=\"#0055A4\"/><rect x=\"10\" width=\"10\" height=\"20\" fill=\"#fff\"/><rect x=\"20\" width=\"10\" height=\"20\" fill=\"#EF4135\"/></svg></button><button type=\"button\" data-lang=\"es\" aria-label=\"Espa\u00f1ol\" title=\"Espa\u00f1ol\"><svg viewBox=\"0 0 30 20\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><rect width=\"30\" height=\"20\" fill=\"#AA151B\"/><rect y=\"5\" width=\"30\" height=\"10\" fill=\"#F1BF00\"/></svg></button><button type=\"button\" data-lang=\"pt\" aria-label=\"Portugu\u00eas\" title=\"Portugu\u00eas\"><svg viewBox=\"0 0 30 20\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><rect width=\"30\" height=\"20\" fill=\"#FF0000\"/><rect width=\"12\" height=\"20\" fill=\"#006600\"/><circle cx=\"12\" cy=\"10\" r=\"3.8\" fill=\"#FFE000\"/><rect x=\"10.5\" y=\"8.3\" width=\"3\" height=\"3.4\" rx=\".6\" fill=\"#D00000\" stroke=\"#fff\" stroke-width=\".5\"/></svg></button><button type=\"button\" data-lang=\"de\" aria-label=\"Deutsch\" title=\"Deutsch\"><svg viewBox=\"0 0 30 20\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><rect width=\"30\" height=\"20\" fill=\"#FFCE00\"/><rect width=\"30\" height=\"13.4\" fill=\"#DD0000\"/><rect width=\"30\" height=\"6.7\" fill=\"#000\"/></svg></button><button type=\"button\" data-lang=\"it\" aria-label=\"Italiano\" title=\"Italiano\"><svg viewBox=\"0 0 30 20\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><rect width=\"10\" height=\"20\" fill=\"#009246\"/><rect x=\"10\" width=\"10\" height=\"20\" fill=\"#fff\"/><rect x=\"20\" width=\"10\" height=\"20\" fill=\"#CE2B37\"/></svg></button>";
   nav.appendChild(nav.querySelector('[data-lang="en"]'));
+  document.querySelectorAll('.back-btn').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+      a.classList.add('pressed');
+      setTimeout(function () { window.location.href = a.getAttribute('href'); }, 220);
+    });
+  });
   var buttons = nav.querySelectorAll('button');
   var nodes = document.querySelectorAll('[data-i18n]');
   var figures = [];
