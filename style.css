@@ -235,3 +235,5 @@
   .support-block { text-align: center; }
   .mail-icon img { width: 96px; height: 96px; display: block; filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
   .logo-link img.kofi-btn { width: 320px; height: auto; max-width: 100%; }
+  #about { text-align: center; }
+  .social img[src$='kofi-cup.png'] { width: 64px; height: 64px; }
