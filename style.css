@@ -243,14 +243,12 @@
   details.faq summary::after { color: #fff; text-shadow: 0 2px 5px rgba(0,0,0,.28); }
   .social img[src$='steam.png'], .social img[src$='instagram.png'] { filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
   .strip-end { margin: 44px 0 0; }
-  .back-btn { position: relative; display: inline-block; width: 84px; height: 84px; line-height: 0; -webkit-tap-highlight-color: transparent; }
+  .back-btn { position: relative; display: inline-block; width: 72px; height: 72px; line-height: 0; -webkit-tap-highlight-color: transparent; }
   .back-btn img { position: absolute; inset: 0; width: 100%; height: 100%; filter: drop-shadow(0 3px 4px rgba(0,0,0,.3)); transition: transform .18s; }
   .back-btn .b2 { opacity: 0; }
-  .back-btn:hover .b1, .back-btn:focus-visible .b1 { animation: back-nudge .7s ease-in-out infinite; }
   .back-btn:active .b1, .back-btn.pressed .b1 { opacity: 0; animation: none; }
   .back-btn:active .b2, .back-btn.pressed .b2 { opacity: 1; }
   .back-btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; border-radius: 8px; }
   @keyframes back-nudge { 0%, 100% { transform: translateX(0) rotate(0); } 50% { transform: translateX(-7px) rotate(-4deg); } }
-  @media (prefers-reduced-motion: reduce) { .back-btn:hover .b1, .back-btn:focus-visible .b1 { animation: none; } }
   .back { text-align: center; margin: 14px 0 0; }
   .back + .page-title { margin-top: 0; }
