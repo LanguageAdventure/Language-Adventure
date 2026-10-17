@@ -242,3 +242,4 @@
   details.faq summary { font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 700; color: #fff; font-size: 1.45rem; text-shadow: 0 2px 5px rgba(0,0,0,.28); }
   details.faq summary::after { color: #fff; text-shadow: 0 2px 5px rgba(0,0,0,.28); }
   .social img[src$='steam.png'], .social img[src$='instagram.png'] { filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
+  .strip-end { margin: 44px 0 0; }
