@@ -3,7 +3,7 @@
     "en": {
       "tagline": "A stop motion animated language learning game.",
       "aboutTitle": "About the game",
-      "aboutP1": "Learn a new language by exploring a handmade stop motion town. Talk to the characters, interact with objects and discover how words work in real situations.",
+      "aboutP1": "Learn a new language in a handmade town and interact with objects and characters in stop motion animated scenes!",
       "aboutP2": "It all starts when an alien spaceship crash-lands in your garden. Learn to communicate with your new visitors and help them find their way home.",
       "featuresTitle": "Features",
       "f1t": "Handmade stop motion",
@@ -15,17 +15,13 @@
       "f4t": "Subtitles in your language",
       "f4d": "Follow the story with subtitles in French, Spanish, Portuguese, German, Italian and more.",
       "playtestTitle": "Would you like to play the demo early?",
-      "playtestBtn": "Find out how",
+      "playtestBtn": "Click here",
       "contactTitle": "Contact",
       "contactText": "Questions, feedback or press enquiries? Get in touch:",
       "rights": "All rights reserved.",
       "navSupport": "Support the game",
       "supTitle": "Help me make the game!",
-      "supIntro": "Language Adventure is handmade, frame by frame, by an independent developer. If you donate over €20 I'll make sure you get a copy of the English version. Thank you!",
-      "patreonTitle": "Join me on Patreon",
-      "patreonText": "Support development with a monthly pledge and help keep the project going.",
-      "kofiTitle": "Buy me some plasticine on Ko-fi",
-      "kofiText": "A one-off tip, no strings attached. Every bit of plasticine keeps the stop motion going!",
+      "supIntro": "Language Adventure is handmade by an independent developer. Any support is much appreciated. If you donate over €20 on any platform I'll make sure you get a copy of the English version.",
       "freeTitle": "Other ways to help",
       "free1": "Add it to your Steam wishlist",
       "free2": "Share the trailer with friends, teachers and language learners",
@@ -76,12 +72,13 @@
       "langName": "English",
       "comingFirst": "The English version is out first, the other languages will follow.",
       "ai1": "Writing Lua scripts for Visionaire Studio, e.g. getting the engine to display subtitles in two different languages at once.",
-      "ai2": "Helping draft subtitle translations into other languages."
+      "ai2": "Helping draft subtitle translations into other languages.",
+      "back": "Back"
     },
     "fr": {
       "tagline": "Un jeu d'apprentissage des langues animé en stop motion.",
       "aboutTitle": "À propos du jeu",
-      "aboutP1": "Apprenez une nouvelle langue en explorant une ville fabriquée à la main en stop motion. Parlez aux personnages, interagissez avec les objets et découvrez comment fonctionnent les mots dans des situations réelles.",
+      "aboutP1": "Apprenez une nouvelle langue dans une ville faite à la main et interagissez avec des objets et des personnages dans des scènes animées en stop motion !",
       "aboutP2": "Tout commence quand un vaisseau extraterrestre s'écrase dans votre jardin. Apprenez à communiquer avec vos nouveaux visiteurs et aidez-les à rentrer chez eux.",
       "featuresTitle": "Caractéristiques",
       "f1t": "Stop motion fait main",
@@ -93,17 +90,13 @@
       "f4t": "Sous-titres dans votre langue",
       "f4d": "Suivez l'histoire avec des sous-titres en français, espagnol, portugais, allemand, italien et plus encore.",
       "playtestTitle": "Envie de jouer à la démo en avance ?",
-      "playtestBtn": "Découvrez comment",
+      "playtestBtn": "Cliquez ici",
       "contactTitle": "Contact",
       "contactText": "Une question, un retour ou une demande presse ? Écrivez-nous :",
       "rights": "Tous droits réservés.",
       "navSupport": "Soutenir le jeu",
       "supTitle": "Aidez-moi à créer le jeu !",
-      "supIntro": "Language Adventure est fait main, image par image, par un développeur indépendant. Si vous faites un don de plus de 20 €, je m'assurerai que vous receviez une copie de la version anglaise. Merci !",
-      "patreonTitle": "Rejoignez-moi sur Patreon",
-      "patreonText": "Soutenez le développement avec un don mensuel et aidez le projet à continuer.",
-      "kofiTitle": "Offrez-moi de la pâte à modeler sur Ko-fi",
-      "kofiText": "Un petit pourboire ponctuel, sans engagement. Chaque morceau de pâte à modeler fait avancer le stop motion !",
+      "supIntro": "Language Adventure est fait main par un développeur indépendant. Tout soutien est très apprécié. Si vous faites un don de plus de 20 € sur n'importe quelle plateforme, je m'assurerai que vous receviez une copie de la version anglaise.",
       "freeTitle": "Autres façons d'aider",
       "free1": "Ajoutez-le à votre liste de souhaits Steam",
       "free2": "Partagez la bande-annonce avec vos amis, vos professeurs et les apprenants de langues",
@@ -154,12 +147,13 @@
       "langName": "Français",
       "comingFirst": "La version anglaise sort en premier, les autres langues suivront.",
       "ai1": "Écrire des scripts Lua pour Visionaire Studio, par ex. faire afficher au moteur des sous-titres dans deux langues différentes en même temps.",
-      "ai2": "Aider à rédiger des traductions de sous-titres dans d'autres langues."
+      "ai2": "Aider à rédiger des traductions de sous-titres dans d'autres langues.",
+      "back": "Retour"
     },
     "es": {
       "tagline": "Un juego de aprendizaje de idiomas animado en stop motion.",
       "aboutTitle": "Sobre el juego",
-      "aboutP1": "Aprende un nuevo idioma explorando un pueblo hecho a mano en stop motion. Habla con los personajes, interactúa con los objetos y descubre cómo funcionan las palabras en situaciones reales.",
+      "aboutP1": "¡Aprende un nuevo idioma en una ciudad hecha a mano e interactúa con objetos y personajes en escenas animadas en stop motion!",
       "aboutP2": "Todo empieza cuando una nave espacial alienígena aterriza de golpe en tu jardín. Aprende a comunicarte con tus nuevos visitantes y ayúdales a volver a casa.",
       "featuresTitle": "Características",
       "f1t": "Stop motion hecho a mano",
@@ -171,17 +165,13 @@
       "f4t": "Subtítulos en tu idioma",
       "f4d": "Sigue la historia con subtítulos en francés, español, portugués, alemán, italiano y más.",
       "playtestTitle": "¿Quieres jugar la demo antes de tiempo?",
-      "playtestBtn": "Descubre cómo",
+      "playtestBtn": "Haz clic aquí",
       "contactTitle": "Contacto",
       "contactText": "¿Preguntas, comentarios o consultas de prensa? Escríbenos:",
       "rights": "Todos los derechos reservados.",
       "navSupport": "Apoya el juego",
       "supTitle": "¡Ayúdame a crear el juego!",
-      "supIntro": "Language Adventure está hecho a mano, fotograma a fotograma, por un desarrollador independiente. Si donas más de 20 €, me aseguraré de que recibas una copia de la versión en inglés. ¡Gracias!",
-      "patreonTitle": "Únete a mí en Patreon",
-      "patreonText": "Apoya el desarrollo con una aportación mensual y ayuda a que el proyecto siga adelante.",
-      "kofiTitle": "Cómprame plastilina en Ko-fi",
-      "kofiText": "Una propina puntual, sin compromiso. ¡Cada trocito de plastilina mantiene vivo el stop motion!",
+      "supIntro": "Language Adventure está hecho a mano por un desarrollador independiente. Cualquier apoyo se agradece mucho. Si donas más de 20 € en cualquier plataforma, me aseguraré de que recibas una copia de la versión en inglés.",
       "freeTitle": "Otras formas de ayudar",
       "free1": "Añádelo a tu lista de deseos de Steam",
       "free2": "Comparte el tráiler con amigos, profesores y estudiantes de idiomas",
@@ -232,12 +222,13 @@
       "langName": "Español",
       "comingFirst": "La versión en inglés sale primero y las demás lenguas la seguirán.",
       "ai1": "Escribir scripts Lua para Visionaire Studio, p. ej. hacer que el motor muestre subtítulos en dos idiomas distintos a la vez.",
-      "ai2": "Ayudar a redactar traducciones de subtítulos a otros idiomas."
+      "ai2": "Ayudar a redactar traducciones de subtítulos a otros idiomas.",
+      "back": "Volver"
     },
     "pt": {
       "tagline": "Um jogo de aprendizagem de línguas animado em stop motion.",
       "aboutTitle": "Sobre o jogo",
-      "aboutP1": "Aprenda uma nova língua a explorar uma vila feita à mão em stop motion. Fale com as personagens, interaja com os objetos e descubra como as palavras funcionam em situações reais.",
+      "aboutP1": "Aprenda uma nova língua numa cidade feita à mão e interaja com objetos e personagens em cenas animadas em stop motion!",
       "aboutP2": "Tudo começa quando uma nave espacial alienígena aterra de emergência no seu jardim. Aprenda a comunicar com os seus novos visitantes e ajude-os a regressar a casa.",
       "featuresTitle": "Características",
       "f1t": "Stop motion feito à mão",
@@ -249,17 +240,13 @@
       "f4t": "Legendas na sua língua",
       "f4d": "Acompanhe a história com legendas em francês, espanhol, português, alemão, italiano e mais.",
       "playtestTitle": "Quer jogar a demo antecipadamente?",
-      "playtestBtn": "Saiba como",
+      "playtestBtn": "Clique aqui",
       "contactTitle": "Contacto",
       "contactText": "Dúvidas, comentários ou pedidos de imprensa? Entre em contacto:",
       "rights": "Todos os direitos reservados.",
       "navSupport": "Apoie o jogo",
       "supTitle": "Ajude-me a criar o jogo!",
-      "supIntro": "Language Adventure é feito à mão, fotograma a fotograma, por um programador independente. Se doar mais de 20 €, farei questão de que receba uma cópia da versão em inglês. Obrigado!",
-      "patreonTitle": "Junte-se a mim no Patreon",
-      "patreonText": "Apoie o desenvolvimento com uma contribuição mensal e ajude o projeto a continuar.",
-      "kofiTitle": "Compre-me plasticina no Ko-fi",
-      "kofiText": "Uma gorjeta pontual, sem compromisso. Cada bocadinho de plasticina mantém o stop motion a andar!",
+      "supIntro": "Language Adventure é feito à mão por um programador independente. Qualquer apoio é muito apreciado. Se doar mais de 20 € em qualquer plataforma, farei questão de que receba uma cópia da versão em inglês.",
       "freeTitle": "Outras formas de ajudar",
       "free1": "Adicione-o à sua lista de desejos na Steam",
       "free2": "Partilhe o trailer com amigos, professores e estudantes de línguas",
@@ -310,12 +297,13 @@
       "langName": "Português",
       "comingFirst": "A versão em inglês sai primeiro, as outras línguas seguem-se.",
       "ai1": "Escrever scripts Lua para o Visionaire Studio, por ex. fazer o motor mostrar legendas em duas línguas diferentes ao mesmo tempo.",
-      "ai2": "Ajudar a redigir traduções de legendas para outras línguas."
+      "ai2": "Ajudar a redigir traduções de legendas para outras línguas.",
+      "back": "Voltar"
     },
     "de": {
       "tagline": "Ein in Stop-Motion animiertes Sprachlernspiel.",
       "aboutTitle": "Über das Spiel",
-      "aboutP1": "Lerne eine neue Sprache, indem du eine handgemachte Stop-Motion-Stadt erkundest. Sprich mit den Figuren, interagiere mit Gegenständen und entdecke, wie Wörter in echten Situationen funktionieren.",
+      "aboutP1": "Lerne eine neue Sprache in einer handgemachten Stadt und interagiere mit Objekten und Figuren in Stop-Motion-animierten Szenen!",
       "aboutP2": "Alles beginnt, als ein außerirdisches Raumschiff in deinem Garten bruchlandet. Lerne, mit deinen neuen Besuchern zu kommunizieren, und hilf ihnen, den Weg nach Hause zu finden.",
       "featuresTitle": "Features",
       "f1t": "Handgemachte Stop-Motion",
@@ -327,17 +315,13 @@
       "f4t": "Untertitel in deiner Sprache",
       "f4d": "Verfolge die Geschichte mit Untertiteln auf Französisch, Spanisch, Portugiesisch, Deutsch, Italienisch und mehr.",
       "playtestTitle": "Möchtest du die Demo vorab spielen?",
-      "playtestBtn": "So geht's",
+      "playtestBtn": "Hier klicken",
       "contactTitle": "Kontakt",
       "contactText": "Fragen, Feedback oder Presseanfragen? Melde dich bei uns:",
       "rights": "Alle Rechte vorbehalten.",
       "navSupport": "Spiel unterstützen",
       "supTitle": "Hilf mir, das Spiel zu machen!",
-      "supIntro": "Language Adventure entsteht von Hand, Bild für Bild, bei einem unabhängigen Entwickler. Wenn du mehr als 20 € spendest, sorge ich dafür, dass du eine Kopie der englischen Version bekommst. Danke!",
-      "patreonTitle": "Unterstütze mich auf Patreon",
-      "patreonText": "Unterstütze die Entwicklung mit einem monatlichen Beitrag und hilf, das Projekt am Laufen zu halten.",
-      "kofiTitle": "Spendier mir Knete auf Ko-fi",
-      "kofiText": "Ein einmaliges Trinkgeld, ganz ohne Verpflichtung. Jedes Stückchen Knete hält die Stop-Motion am Laufen!",
+      "supIntro": "Language Adventure wird von einem unabhängigen Entwickler von Hand gemacht. Jede Unterstützung wird sehr geschätzt. Wenn du auf einer beliebigen Plattform mehr als 20 € spendest, sorge ich dafür, dass du eine Kopie der englischen Version bekommst.",
       "freeTitle": "Weitere Möglichkeiten zu helfen",
       "free1": "Setz es auf deine Steam-Wunschliste",
       "free2": "Teile den Trailer mit Freunden, Lehrkräften und Sprachlernenden",
@@ -388,12 +372,13 @@
       "langName": "Deutsch",
       "comingFirst": "Die englische Version erscheint zuerst, die anderen Sprachen folgen.",
       "ai1": "Lua-Skripte für Visionaire Studio schreiben, z. B. damit die Engine Untertitel in zwei verschiedenen Sprachen gleichzeitig anzeigt.",
-      "ai2": "Beim Entwurf von Untertitelübersetzungen in andere Sprachen helfen."
+      "ai2": "Beim Entwurf von Untertitelübersetzungen in andere Sprachen helfen.",
+      "back": "Zurück"
     },
     "it": {
       "tagline": "Un gioco per imparare le lingue animato in stop motion.",
       "aboutTitle": "Informazioni sul gioco",
-      "aboutP1": "Impara una nuova lingua esplorando una città fatta a mano in stop motion. Parla con i personaggi, interagisci con gli oggetti e scopri come funzionano le parole nelle situazioni reali.",
+      "aboutP1": "Impara una nuova lingua in una città fatta a mano e interagisci con oggetti e personaggi in scene animate in stop motion!",
       "aboutP2": "Tutto comincia quando un'astronave aliena precipita nel tuo giardino. Impara a comunicare con i tuoi nuovi ospiti e aiutali a tornare a casa.",
       "featuresTitle": "Caratteristiche",
       "f1t": "Stop motion fatto a mano",
@@ -405,17 +390,13 @@
       "f4t": "Sottotitoli nella tua lingua",
       "f4d": "Segui la storia con sottotitoli in francese, spagnolo, portoghese, tedesco, italiano e altro.",
       "playtestTitle": "Vuoi giocare la demo in anteprima?",
-      "playtestBtn": "Scopri come",
+      "playtestBtn": "Clicca qui",
       "contactTitle": "Contatti",
       "contactText": "Domande, commenti o richieste per la stampa? Scrivici:",
       "rights": "Tutti i diritti riservati.",
       "navSupport": "Sostieni il gioco",
       "supTitle": "Aiutami a creare il gioco!",
-      "supIntro": "Language Adventure è fatto a mano, fotogramma dopo fotogramma, da uno sviluppatore indipendente. Se doni più di 20 €, mi assicurerò che tu riceva una copia della versione inglese. Grazie!",
-      "patreonTitle": "Unisciti a me su Patreon",
-      "patreonText": "Sostieni lo sviluppo con un contributo mensile e aiuta il progetto ad andare avanti.",
-      "kofiTitle": "Regalami della plastilina su Ko-fi",
-      "kofiText": "Una mancia una tantum, senza impegno. Ogni pezzetto di plastilina tiene vivo lo stop motion!",
+      "supIntro": "Language Adventure è fatto a mano da uno sviluppatore indipendente. Ogni sostegno è molto apprezzato. Se doni più di 20 € su qualsiasi piattaforma, mi assicurerò che tu riceva una copia della versione inglese.",
       "freeTitle": "Altri modi per aiutare",
       "free1": "Aggiungilo alla tua lista dei desideri su Steam",
       "free2": "Condividi il trailer con amici, insegnanti e studenti di lingue",
@@ -466,7 +447,8 @@
       "langName": "Italiano",
       "comingFirst": "La versione inglese esce per prima, le altre lingue seguiranno.",
       "ai1": "Scrivere script Lua per Visionaire Studio, ad es. far mostrare al motore sottotitoli in due lingue diverse contemporaneamente.",
-      "ai2": "Aiutare a redigere traduzioni dei sottotitoli in altre lingue."
+      "ai2": "Aiutare a redigere traduzioni dei sottotitoli in altre lingue.",
+      "back": "Indietro"
     }
   };
 
@@ -511,6 +493,64 @@
     });
   });
 
+  // Random-looking tilts, and pictures that step in towards the text without covering it
+  var TILTS = [-3.4, 2.1, -1.2, 3.1, -2.4, 1.0, -3.0, 2.6, -0.8, 1.9];
+  var ENCROACH = [70, 20, 110, 45, 95, 30, 80, 60];
+  var pending = false;
+  function textRects(main) {
+    var rects = [];
+    var w = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
+    var r = document.createRange(), n;
+    while ((n = w.nextNode())) {
+      if (!n.nodeValue.trim()) continue;
+      r.selectNodeContents(n);
+      Array.prototype.forEach.call(r.getClientRects(), function (q) { if (q.width) rects.push(q); });
+    }
+    main.querySelectorAll('iframe, img, input, select, textarea, button, .btn, .os, summary').forEach(function (e) {
+      var q = e.getBoundingClientRect(); if (q.width) rects.push(q);
+    });
+    return rects;
+  }
+  function layoutPhotos() {
+    var main = document.querySelector('main');
+    if (!main) return;
+    var wide = window.innerWidth >= 1200;
+    figures.forEach(function (f, i) {
+      f.fig.style.width = ''; f.fig.style.marginLeft = ''; f.fig.style.marginRight = '';
+      f.fig.style.transform = wide ? 'rotate(' + TILTS[i % TILTS.length] + 'deg)' : '';
+    });
+    if (!wide) return;
+    var text = textRects(main);
+    var count = { 0: 0, 1: 0 };
+    figures.forEach(function (f) {
+      if (f.fig.hidden) return;
+      var side = f.fig.parentElement, isLeft = side === side.parentElement.firstElementChild;
+      var k = count[isLeft ? 0 : 1]++;
+      var colW = side.clientWidth - 30;
+      var want = ENCROACH[(k * 3 + (isLeft ? 0 : 2)) % ENCROACH.length];
+      for (var e = want; e >= 0; e -= 6) {
+        var w = Math.min(colW + e, 600);
+        f.fig.style.width = w + 'px';
+        f.fig.style[isLeft ? 'marginRight' : 'marginLeft'] = (-e) + 'px';
+        var b = f.fig.getBoundingClientRect(), hit = false;
+        for (var t = 0; t < text.length; t++) {
+          var q = text[t];
+          if (b.right + 10 > q.left && b.left - 10 < q.right && b.bottom + 6 > q.top && b.top - 6 < q.bottom) { hit = true; break; }
+        }
+        if (!hit) break;
+      }
+    });
+  }
+  function queueLayout() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () { pending = false; layoutPhotos(); });
+  }
+  window.addEventListener('resize', queueLayout);
+  window.addEventListener('load', queueLayout);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(queueLayout);
+  figures.forEach(function (f) { f.img.addEventListener('load', queueLayout); });
+
   function photoPath(l, n) {
     if (PHOTOS[l] && PHOTOS[l][n]) return 'img/photos/' + l + '/' + PHOTOS[l][n];
     if (PHOTOS.base[n]) return 'img/photos/' + PHOTOS.base[n];
@@ -535,6 +575,7 @@
     });
     cur = l;
     try { localStorage.setItem('la-lang', l); } catch (e) {}
+    layoutPhotos();
   }
 
   buttons.forEach(function (b) {
