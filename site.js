@@ -58,7 +58,7 @@
       "fExtra": "Anything else you'd like to tell me",
       "optional": "(optional)",
       "formSending": "Sending…",
-      "formOk": "Thank you! I've got your request and will be in touch soon.",
+      "formOk": "Message sent.\n\nThank you!",
       "formErr": "Sorry, something went wrong. Please try again in a moment.",
       "langName": "English",
       "comingFirst": "Launching in English first, with other languages to follow.",
@@ -130,7 +130,7 @@
       "fExtra": "Autre chose à me dire",
       "optional": "(facultatif)",
       "formSending": "Envoi…",
-      "formOk": "Merci ! J'ai bien reçu votre demande et je reviens vers vous bientôt.",
+      "formOk": "Message envoyé.\n\nMerci !",
       "formErr": "Désolé, un problème est survenu. Veuillez réessayer dans un instant.",
       "langName": "Français",
       "comingFirst": "Lancement d'abord en anglais, les autres langues suivront.",
@@ -202,7 +202,7 @@
       "fExtra": "Algo más que quieras contarme",
       "optional": "(opcional)",
       "formSending": "Enviando…",
-      "formOk": "¡Gracias! He recibido tu solicitud y te escribiré pronto.",
+      "formOk": "Mensaje enviado.\n\n¡Gracias!",
       "formErr": "Lo siento, algo ha salido mal. Inténtalo de nuevo en un momento.",
       "langName": "Español",
       "comingFirst": "Se lanzará primero en inglés y las demás lenguas llegarán después.",
@@ -274,7 +274,7 @@
       "fExtra": "Mais alguma coisa que queira dizer-me",
       "optional": "(opcional)",
       "formSending": "A enviar…",
-      "formOk": "Obrigado! Recebi o seu pedido e entro em contacto em breve.",
+      "formOk": "Mensagem enviada.\n\nObrigado!",
       "formErr": "Desculpe, algo correu mal. Tente novamente daqui a pouco.",
       "langName": "Português",
       "comingFirst": "Lançamento primeiro em inglês, com as outras línguas a seguir.",
@@ -346,7 +346,7 @@
       "fExtra": "Sonst noch etwas, das du mir sagen möchtest",
       "optional": "(freiwillig)",
       "formSending": "Wird gesendet…",
-      "formOk": "Danke! Ich habe deine Anfrage erhalten und melde mich bald.",
+      "formOk": "Nachricht gesendet.\n\nVielen Dank!",
       "formErr": "Entschuldigung, etwas ist schiefgelaufen. Bitte versuch es gleich noch einmal.",
       "langName": "Deutsch",
       "comingFirst": "Zuerst erscheint die englische Version, die anderen Sprachen folgen später.",
@@ -418,7 +418,7 @@
       "fExtra": "Qualcos'altro che vuoi dirmi",
       "optional": "(facoltativo)",
       "formSending": "Invio in corso…",
-      "formOk": "Grazie! Ho ricevuto la tua richiesta e ti scriverò presto.",
+      "formOk": "Messaggio inviato.\n\nGrazie!",
       "formErr": "Spiacente, qualcosa è andato storto. Riprova tra un momento.",
       "langName": "Italiano",
       "comingFirst": "Uscirà prima in inglese, le altre lingue arriveranno in seguito.",
@@ -619,6 +619,8 @@
           form.hidden = true;
           status.textContent = T[cur].formOk;
           status.className = 'note ok';
+          layoutPhotos();
+          status.scrollIntoView({ block: 'center' });
         } else { throw new Error('rejected'); }
       }).catch(function () {
         btn.disabled = false;
