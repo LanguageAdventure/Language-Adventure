@@ -636,4 +636,22 @@
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
   setLang(start);
+
+  // Ko-fi floating "Support" button (not on the support page, which has the full widget)
+  if (!/support\.html/.test(location.pathname)) {
+    var kf = document.createElement('script');
+    kf.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
+    kf.async = true;
+    kf.onload = function () {
+      try {
+        kofiWidgetOverlay.draw('languageadventure', {
+          'type': 'floating-chat',
+          'floating-chat.donateButton.text': 'Support',
+          'floating-chat.donateButton.background-color': '#FFCC00',
+          'floating-chat.donateButton.text-color': '#2E2108'
+        });
+      } catch (e) {}
+    };
+    document.body.appendChild(kf);
+  }
 })();
