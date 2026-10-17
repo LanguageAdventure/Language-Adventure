@@ -237,3 +237,8 @@
   .logo-link img.kofi-btn { width: 320px; height: auto; max-width: 100%; }
   #about { text-align: center; }
   .social img[src$='kofi-cup.png'] { width: 64px; height: 64px; }
+  .flags { margin: 14px 0 4px; }
+  .feature-list { grid-template-columns: 1fr; max-width: 560px; margin-left: auto; margin-right: auto; text-align: center; }
+  details.faq summary { font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 700; color: #fff; font-size: 1.45rem; text-shadow: 0 2px 5px rgba(0,0,0,.28); }
+  details.faq summary::after { color: #fff; text-shadow: 0 2px 5px rgba(0,0,0,.28); }
+  .social img[src$='steam.png'], .social img[src$='instagram.png'] { filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
