@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261018">
+<link rel="stylesheet" href="style.css?v=20261020">
 <title>Language Adventure</title>
 <meta name="description" content="Language Adventure is a stop motion animated language learning adventure game.">
 </head>
@@ -20,46 +20,41 @@
     <h1 class="logo"><img src="img/logo.png" alt="Language Adventure" width="1080" height="461"></h1>
   </div>
   <p class="tagline" data-i18n="tagline">A stop motion animated language learning adventure game.</p>
-  <nav class="menu" aria-label="Main">
-    <a href="index.html" aria-current="page" data-i18n="navHome">Home</a>
-    <a href="support.html" data-i18n="navSupport">Support the game</a>
-  </nav>
+  <p class="coming" data-i18n="comingFirst"></p>
 </header>
 
 <div class="layout">
 <aside class="side" data-photos="1,3,13,11,5,9" aria-hidden="true"></aside>
 <main>
-  <section class="trailer" aria-labelledby="trailer-h">
-    <h2 id="trailer-h" data-i18n="watch">Watch the trailer</h2>
+  <section class="trailer" aria-label="Trailer">
     <div class="video">
       <iframe src="https://www.youtube-nocookie.com/embed/wJoiifm54UY" title="Language Adventure trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
   </section>
 
-  <section id="about" aria-labelledby="about-h">
-    <h2 id="about-h" data-i18n="aboutTitle">About the game</h2>
+  <section id="about" aria-label="About the game">
     <p data-i18n="aboutP1"></p>
     <p data-i18n="aboutP2"></p>
     <ul class="feature-list">
-      <li><strong data-i18n="f1t"></strong><span data-i18n="f1d"></span></li>
-      <li><strong data-i18n="f2t"></strong><span data-i18n="f2d"></span></li>
-      <li><strong data-i18n="f3t"></strong><span data-i18n="f3d"></span></li>
-      <li><strong data-i18n="f4t"></strong><span data-i18n="f4d"></span></li>
+      <li><span data-i18n="f1d"></span></li>
+      <li><span data-i18n="f2d"></span></li>
+      <li><span data-i18n="f3d"></span></li>
+      <li><span data-i18n="f4d"></span></li>
     </ul>
     <a class="more-link" href="faq.html" data-i18n="faqLink">Got questions? Read the FAQ</a>
   </section>
 
-  <section id="find" class="find" aria-labelledby="find-h">
-    <h2 id="find-h" data-i18n="findTitle">Find the game</h2>
-    <div class="btns">
-      <a class="btn" href="https://store.steampowered.com/app/2204770" target="_blank" rel="noopener" data-i18n="steamBtn">See it on Steam</a>
-      <a class="btn" href="https://language-adventure.itch.io/language-adventure" target="_blank" rel="noopener" data-i18n="itchBtn">See it on itch.io</a>
+  <section id="find" class="find" aria-label="Find the game">
+    <div class="big-links">
+      <a href="https://store.steampowered.com/app/2204770" target="_blank" rel="noopener" aria-label="Steam" title="Steam"><img src="img/social/steam.svg" alt="" width="96" height="96"></a>
+      <a href="https://language-adventure.itch.io/language-adventure" target="_blank" rel="noopener" aria-label="itch.io" title="itch.io"><img src="img/social/itchdotio.svg" alt="" width="96" height="96"></a>
     </div>
     <div class="retro-os" aria-label="Windows, Mac, Linux">
       <span class="os"><img src="img/os/windows.png" alt="Windows" width="60" height="48">WINDOWS</span>
       <span class="os"><img src="img/os/mac.png" alt="Mac" width="41" height="48">MAC</span>
       <span class="os"><img src="img/os/linux.png" alt="Linux" width="40" height="48">LINUX</span>
     </div>
+    <p class="support-cta"><a class="btn" href="support.html" data-i18n="navSupport">Support the game</a></p>
   </section>
 
   <section id="playtest" class="demo-teaser" aria-labelledby="playtest-h">
@@ -85,9 +80,8 @@
     <li><a href="https://www.reddit.com/r/LanguageAdventure/" target="_blank" rel="noopener" aria-label="Reddit" title="Reddit"><img src="img/social/reddit.svg" alt="" width="32" height="32"></a></li>
     <li><a href="mailto:gameswonky@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path fill="currentColor" d="M2 5h20v14H2z M4 7.4V17h16V7.4l-8 5.2z M5 7l7 4.6L19 7z" fill-rule="evenodd"/></svg></a></li>
   </ul>
-  <p class="small">&copy; <span id="year"></span> Wonky Games. <span data-i18n="rights">All rights reserved.</span></p>
 </footer>
 
-<script src="site.js?v=20261018"></script>
+<script src="site.js?v=20261020"></script>
 </body>
 </html>
