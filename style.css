@@ -255,4 +255,4 @@
   .flags svg, .flags img { width: 60px; height: 40px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,.35); display: block; object-fit: cover; }
   #form-status.ok { white-space: pre-line; line-height: 1.35; text-align: center; font-weight: 800; font-size: 1.3rem; margin: 30px 0; }
   [id^='kofi-widget-overlay'], .floatingchat-container-wrap, .floatingchat-container-wrap-mobi { opacity: .85; transform: scale(.85); transform-origin: left bottom; }
-  .kofi-embed { display: block; width: 100%; max-width: 560px; margin: 22px auto 0; border: 0; padding: 0; background: transparent; mix-blend-mode: multiply; }
+  .kofi-embed { display: block; width: 100%; max-width: 560px; margin: 22px auto 0; }
