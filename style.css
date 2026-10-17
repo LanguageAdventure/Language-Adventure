@@ -108,7 +108,7 @@
     .layout > .side:first-child { align-items: flex-end; }
     .layout > .side:last-child { align-items: flex-start; }
     .side { justify-content: flex-start; gap: 44px; padding: 40px 6px; }
-    .layout > .side:last-child { padding-top: 190px; }
+    .layout > .side:first-child { padding-top: 190px; }
     .photo { position: relative; max-width: none; width: calc(100% - 12px); transition: none; }
     .layout > .side:first-child .photo { align-self: flex-end; }
     .layout > .side:last-child .photo { align-self: flex-start; }

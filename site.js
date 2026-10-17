@@ -521,6 +521,7 @@
     });
     if (!wide) return;
     var text = textRects(main);
+    function sizePass() {
     var count = { 0: 0, 1: 0 };
     figures.forEach(function (f) {
       if (f.fig.hidden) return;
@@ -539,6 +540,23 @@
         }
         if (!hit) break;
       }
+    });
+    }
+    for (var pass = 0; pass < 3; pass++) {
+      document.querySelectorAll('.side').forEach(function (s) { s.style.gap = ''; });
+      sizePass();
+      spreadPhotos();
+    }
+    sizePass();
+  }
+  function spreadPhotos() {
+    document.querySelectorAll('.side').forEach(function (s) {
+      var figs = Array.prototype.filter.call(s.children, function (f) { return !f.hidden; });
+      if (figs.length < 2) return;
+      var cs = getComputedStyle(s), sum = 0;
+      figs.forEach(function (f) { sum += f.offsetHeight; });
+      var avail = s.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom) - sum;
+      s.style.gap = Math.max(44, avail / (figs.length - 1)) + 'px';
     });
   }
   function queueLayout() {
