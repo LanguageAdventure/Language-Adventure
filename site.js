@@ -650,14 +650,6 @@
           'floating-chat.donateButton.background-color': '#FFCC00',
           'floating-chat.donateButton.text-color': '#2E2108'
         });
-        var slot = document.getElementById('kofi-slot'), tries = 0;
-        if (slot) {
-          var t = setInterval(function () {
-            var w = document.querySelector('.floatingchat-container-wrap, .floatingchat-container-wrap-mobi, [id^="kofi-widget-overlay"]');
-            if (w) { slot.appendChild(w); clearInterval(t); }
-            else if (++tries > 40) clearInterval(t);
-          }, 250);
-        }
       } catch (e) {}
     };
     document.body.appendChild(kf);
