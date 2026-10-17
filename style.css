@@ -252,3 +252,4 @@
   @keyframes back-nudge { 0%, 100% { transform: translateX(0) rotate(0); } 50% { transform: translateX(-7px) rotate(-4deg); } }
   .back { text-align: center; margin: 14px 0 0; }
   .back + .page-title { margin-top: 0; }
+  .flags svg, .flags img { width: 60px; height: 40px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,.35); display: block; object-fit: cover; }
