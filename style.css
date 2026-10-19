@@ -221,8 +221,8 @@
   .support-end .give { margin-top: 0; }
   .social { gap: 22px 34px; margin: 22px 0 8px; }
   .social a { color: #fff; }
-  .social img { width: 64px; height: 64px; filter: invert(1) drop-shadow(0 2px 3px rgba(0,0,0,.35)); }
-  .social svg { width: 64px; height: 64px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.35)); }
+  .social img { width: 52px; height: 52px; filter: invert(1) drop-shadow(0 2px 3px rgba(0,0,0,.35)); }
+  .social svg { width: 52px; height: 52px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.35)); }
   .social a:focus-visible { outline-color: #fff; }
   h1, h2, h3, .tagline, .page-title { text-wrap: balance; }
 
@@ -237,7 +237,7 @@
   .support-block { text-align: center; }
   .mail-icon img { width: 96px; height: 96px; display: block; filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
   #about { text-align: center; }
-  .social img[src$='kofi-cup.png'] { width: 64px; height: 64px; }
+  .social img[src$='kofi-cup.png'] { width: 52px; height: 52px; }
   .flags { margin: 14px 0 4px; }
   .feature-list { grid-template-columns: 1fr; max-width: 560px; margin-left: auto; margin-right: auto; text-align: center; }
   details.faq summary { font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 700; color: #fff; font-size: 1.45rem; text-shadow: 0 2px 5px rgba(0,0,0,.28); }
@@ -260,7 +260,7 @@
   .give { text-align: center; margin: 18px 0 0; line-height: 0; }
   .give a { display: inline-block; }
   .give img { width: 173px; height: auto; max-width: 100%; }
-  .social img[src$='letter.png'] { width: 88px; height: 88px; margin: -12px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
+  .social img[src$='letter.png'] { width: 80px; height: 80px; margin: -14px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
 
 /* 19 Oct: still side photos may sit behind the text */
 @media (min-width: 1200px) {
