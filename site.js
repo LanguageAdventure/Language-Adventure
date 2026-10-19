@@ -438,11 +438,11 @@
   var PHOTOS = {
     base: { 1: '1.jpg', 2: '2.gif', 3: '3.gif', 4: '4.gif', 5: '5.gif', 6: '6.jpg', 8: '8.gif', 9: '9.jpg',
             12: '12.gif', 13: '13.gif', 14: '14.gif', 15: '15.gif', 16: '16.gif', 17: '17.gif' },
-    fr: { 7: '7.jpg', 10: '10.jpg', 11: '11.jpg', 17: '17.gif' },
-    es: { 11: '11.jpg', 17: '17.gif' },
-    pt: { 17: '17.gif' },
-    de: { 17: '17.gif' },
-    it: { 17: '17.gif' }
+    fr: { 7: '7.jpg', 10: '10.jpg', 11: '11.jpg', 17: '17.gif', 18: '18.gif' },
+    es: { 11: '11.jpg', 17: '17.gif', 18: '18.gif' },
+    pt: { 17: '17.gif', 18: '18.gif' },
+    de: { 17: '17.gif', 18: '18.gif' },
+    it: { 17: '17.gif', 18: '18.gif' }
   };
   var ALT = {
     1: 'Narrated by Adam Buxton', 2: 'Stop motion bedroom with a teddy bear on the bed',
@@ -637,7 +637,7 @@
       if (f.img.getAttribute('src') !== p) f.img.src = p;
     });
     document.querySelectorAll('img[data-photo]').forEach(function (im) {
-      var p = photoPath(l, im.getAttribute('data-photo'));
+      var p = photoPath(l, im.getAttribute('data-photo')) || im.getAttribute('data-fallback');
       if (p && im.getAttribute('src') !== p) im.src = p;
     });
     balancePhotos();
