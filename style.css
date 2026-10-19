@@ -275,3 +275,11 @@
 
 /* Trailer inside About, above the More link */
 #about .trailer { margin: 22px 0 6px; }
+  /* Inline photos between paragraphs (phones/tablets only; wide screens use the side photos) */
+  .inline-photo { display: block; margin: 22px auto; background: #fff; padding: 8px; width: min(100%, 440px); box-shadow: 0 2px 6px rgba(0,0,0,.2); }
+  .inline-photo img { display: block; width: 100%; height: auto; }
+  .ip-1 { transform: rotate(-1.6deg); }
+  .ip-2 { transform: rotate(1.4deg); }
+@media (min-width: 1200px) {
+  .inline-photo { display: none; }
+}
