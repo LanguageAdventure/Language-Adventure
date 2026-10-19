@@ -261,3 +261,6 @@
   .give a { display: inline-block; }
   .give img { width: 173px; height: auto; max-width: 100%; }
   .social img[src$='letter.png'] { width: 88px; height: 88px; margin: -12px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
+
+/* Trailer inside About, above the More link */
+#about .trailer { margin: 22px 0 6px; }

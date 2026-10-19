@@ -437,9 +437,12 @@
   // Photos: img/photos/<file> is the default (no translation); img/photos/<lang>/<file> overrides it for that language.
   var PHOTOS = {
     base: { 1: '1.jpg', 2: '2.gif', 3: '3.gif', 4: '4.gif', 5: '5.gif', 6: '6.jpg', 8: '8.gif', 9: '9.jpg',
-            12: '12.gif', 13: '13.gif', 14: '14.gif', 15: '15.gif', 16: '16.gif' },
-    fr: { 7: '7.jpg', 10: '10.jpg', 11: '11.jpg' },
-    es: { 11: '11.jpg' }
+            12: '12.gif', 13: '13.gif', 14: '14.gif', 15: '15.gif', 16: '16.gif', 17: '17.gif' },
+    fr: { 7: '7.jpg', 10: '10.jpg', 11: '11.jpg', 17: '17.gif' },
+    es: { 11: '11.jpg', 17: '17.gif' },
+    pt: { 17: '17.gif' },
+    de: { 17: '17.gif' },
+    it: { 17: '17.gif' }
   };
   var ALT = {
     1: 'Narrated by Adam Buxton', 2: 'Stop motion bedroom with a teddy bear on the bed',
@@ -449,8 +452,12 @@
     10: 'Kitchen with a dog and a cake on the table', 11: 'Living room with a cat asleep on the sofa',
     12: 'Globe on a wooden table', 13: 'Teacher in front of a blackboard',
     14: 'Four little aliens: don\'t worry, they don\'t bite', 15: 'Folded checked napkin',
-    16: 'One-eyed alien beside a glass globe'
+    16: 'One-eyed alien beside a glass globe',
+    17: 'A flowerpot: a pot with a flower in it'
   };
+
+  // Side photo size multiplier (1 = original size)
+  var PHOTO_SCALE = 1.2;
 
   var nav = document.getElementById('flags');
   nav.innerHTML = "<button type=\"button\" data-lang=\"en\" aria-label=\"English\" title=\"English\"><img src=\"img/flags/en.png\" alt=\"\" width=\"180\" height=\"120\"></button><button type=\"button\" data-lang=\"fr\" aria-label=\"Fran\u00e7ais\" title=\"Fran\u00e7ais\"><img src=\"img/flags/fr.png\" alt=\"\" width=\"180\" height=\"120\"></button><button type=\"button\" data-lang=\"es\" aria-label=\"Espa\u00f1ol\" title=\"Espa\u00f1ol\"><img src=\"img/flags/es.png\" alt=\"\" width=\"180\" height=\"120\"></button><button type=\"button\" data-lang=\"pt\" aria-label=\"Portugu\u00eas\" title=\"Portugu\u00eas\"><img src=\"img/flags/pt.png\" alt=\"\" width=\"180\" height=\"120\"></button><button type=\"button\" data-lang=\"de\" aria-label=\"Deutsch\" title=\"Deutsch\"><img src=\"img/flags/de.png\" alt=\"\" width=\"180\" height=\"120\"></button><button type=\"button\" data-lang=\"it\" aria-label=\"Italiano\" title=\"Italiano\"><img src=\"img/flags/it.png\" alt=\"\" width=\"180\" height=\"120\"></button>";
@@ -519,16 +526,20 @@
       var k = count[isLeft ? 0 : 1]++;
       var colW = side.clientWidth - 30;
       var want = ENCROACH[(k * 3 + (isLeft ? 0 : 2)) % ENCROACH.length];
-      for (var e = want; e >= 0; e -= 6) {
-        var w = Math.min(colW + e, 600);
-        f.fig.style.width = w + 'px';
-        f.fig.style[isLeft ? 'marginRight' : 'marginLeft'] = (-e) + 'px';
-        var b = f.fig.getBoundingClientRect(), hit = false;
-        for (var t = 0; t < text.length; t++) {
-          var q = text[t];
-          if (b.right + 10 > q.left && b.left - 10 < q.right && b.bottom + 6 > q.top && b.top - 6 < q.bottom) { hit = true; break; }
+      // Photos are up to PHOTO_SCALE x bigger; they shrink back (to the old size at minimum) rather than cover text
+      var done = false;
+      for (var sc = PHOTO_SCALE; sc >= 1 - 1e-6 && !done; sc -= 0.05) {
+        for (var e = want; e >= 0; e -= 12) {
+          var base = Math.min(colW + e, 600), w = Math.round(base * sc);
+          f.fig.style.width = w + 'px';
+          f.fig.style[isLeft ? 'marginRight' : 'marginLeft'] = (-(e + w - base)) + 'px';
+          var b = f.fig.getBoundingClientRect(), hit = false;
+          for (var t = 0; t < text.length; t++) {
+            var q = text[t];
+            if (b.right + 10 > q.left && b.left - 10 < q.right && b.bottom + 6 > q.top && b.top - 6 < q.bottom) { hit = true; break; }
+          }
+          if (!hit) { done = true; break; }
         }
-        if (!hit) break;
       }
     });
     }
