@@ -526,21 +526,10 @@
       var k = count[isLeft ? 0 : 1]++;
       var colW = side.clientWidth - 30;
       var want = ENCROACH[(k * 3 + (isLeft ? 0 : 2)) % ENCROACH.length];
-      // Photos are up to PHOTO_SCALE x bigger; they shrink back (to the old size at minimum) rather than cover text
-      var done = false;
-      for (var sc = PHOTO_SCALE; sc >= 1 - 1e-6 && !done; sc -= 0.05) {
-        for (var e = want; e >= 0; e -= 12) {
-          var base = Math.min(colW + e, 600), w = Math.round(base * sc);
-          f.fig.style.width = w + 'px';
-          f.fig.style[isLeft ? 'marginRight' : 'marginLeft'] = (-(e + w - base)) + 'px';
-          var b = f.fig.getBoundingClientRect(), hit = false;
-          for (var t = 0; t < text.length; t++) {
-            var q = text[t];
-            if (b.right + 10 > q.left && b.left - 10 < q.right && b.bottom + 6 > q.top && b.top - 6 < q.bottom) { hit = true; break; }
-          }
-          if (!hit) { done = true; break; }
-        }
-      }
+      // Photos are PHOTO_SCALE x bigger and may sit behind the text (main is drawn on top of them)
+      var w = Math.round(Math.min(colW + want, 600) * PHOTO_SCALE);
+      f.fig.style.width = w + 'px';
+      f.fig.style[isLeft ? 'marginRight' : 'marginLeft'] = (-Math.max(0, w - colW)) + 'px';
     });
     }
     for (var pass = 0; pass < 3; pass++) {

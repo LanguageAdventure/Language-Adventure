@@ -262,5 +262,16 @@
   .give img { width: 173px; height: auto; max-width: 100%; }
   .social img[src$='letter.png'] { width: 88px; height: 88px; margin: -12px; filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
 
+/* 19 Oct: all text bold and white; bigger side photos sit behind the text */
+body { color: #fff; font-weight: 800; text-shadow: 0 2px 5px rgba(0,0,0,.45); }
+strong, b { font-weight: 800; }
+.os { color: #fff; }
+.btn, .btn:visited { text-shadow: none; }
+.fld input, .fld select, .fld textarea, .fld option { color: var(--ink); text-shadow: none; }
+@media (min-width: 1200px) {
+  main { position: relative; z-index: 2; }
+  .side { position: relative; z-index: 1; }
+}
+
 /* Trailer inside About, above the More link */
 #about .trailer { margin: 22px 0 6px; }
