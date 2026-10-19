@@ -475,7 +475,8 @@
   var figures = [];
   var cur = 'en';
 
-  document.querySelectorAll('.side[data-photos]').forEach(function (side) {
+  var sides = document.querySelectorAll('.side[data-photos]');
+  sides.forEach(function (side) {
     side.getAttribute('data-photos').split(',').forEach(function (n) {
       var fig = document.createElement('figure');
       fig.className = 'photo';
@@ -486,9 +487,26 @@
       img.addEventListener('error', function () { fig.hidden = true; });
       fig.appendChild(img);
       side.appendChild(fig);
-      figures.push({ n: n, fig: fig, img: img });
+      figures.push({ n: n, fig: fig, img: img, side: side });
     });
   });
+  // Order photos by alternating the two columns (L1, R1, L2, R2...), so each side can get the same number
+  var ORDER = [];
+  if (sides.length === 2) {
+    var cols = [[], []];
+    figures.forEach(function (f) { cols[f.side === sides[0] ? 0 : 1].push(f); });
+    for (var oi = 0; oi < Math.max(cols[0].length, cols[1].length); oi++) {
+      if (cols[0][oi]) ORDER.push(cols[0][oi]);
+      if (cols[1][oi]) ORDER.push(cols[1][oi]);
+    }
+  }
+  // Visible photos alternate left/right; an odd one out is hidden so both sides always match
+  function balancePhotos() {
+    if (sides.length !== 2) return;
+    var vis = ORDER.filter(function (f) { return !f.fig.hidden; });
+    if (vis.length % 2) { vis[vis.length - 1].fig.hidden = true; vis.pop(); }
+    vis.forEach(function (f, i) { sides[i % 2].appendChild(f.fig); });
+  }
 
   // Random-looking tilts, and pictures that step in towards the text without covering it
   var TILTS = [-3.4, 2.1, -1.2, 3.1, -2.4, 1.0, -3.0, 2.6, -0.8, 1.9];
@@ -513,11 +531,24 @@
     if (!main) return;
     var wide = window.innerWidth >= 1200;
     figures.forEach(function (f, i) {
-      f.fig.style.width = ''; f.fig.style.marginLeft = ''; f.fig.style.marginRight = '';
+      f.fig.style.width = ''; f.fig.style.marginLeft = ''; f.fig.style.marginRight = ''; f.fig.style.marginTop = '';
       f.fig.style.transform = wide ? 'rotate(' + TILTS[i % TILTS.length] + 'deg)' : '';
     });
+    var banner = document.querySelector('.hero-banner'), layout = main.parentElement;
+    sides.forEach(function (sd) { sd.style.marginTop = ''; });
     if (!wide) return;
+    // Columns start just under the banner (next to the flags and tagline)
+    if (banner && layout) {
+      var lift = layout.getBoundingClientRect().top - banner.getBoundingClientRect().bottom;
+      sides.forEach(function (sd) { sd.style.marginTop = (-Math.max(0, lift)) + 'px'; });
+    }
     var text = textRects(main);
+    var head = [];
+    document.querySelectorAll('.top .flags, .top .tagline').forEach(function (el) {
+      var r = document.createRange(); r.selectNodeContents(el);
+      Array.prototype.forEach.call(r.getClientRects(), function (q) { if (q.width) head.push(q); });
+      var q2 = el.querySelectorAll('button'); Array.prototype.forEach.call(q2, function (bt) { head.push(bt.getBoundingClientRect()); });
+    });
     function sizePass() {
     var count = { 0: 0, 1: 0 };
     figures.forEach(function (f) {
@@ -526,23 +557,38 @@
       var k = count[isLeft ? 0 : 1]++;
       var colW = side.clientWidth - 30;
       var want = ENCROACH[(k * 3 + (isLeft ? 0 : 2)) % ENCROACH.length];
-      if (/\.gif$/i.test(f.img.getAttribute('src') || '')) {
-        // GIFs: original size, step in towards the text but never cover it
-        for (var e = want; e >= 0; e -= 6) {
-          f.fig.style.width = Math.min(colW + e, 600) + 'px';
-          f.fig.style[isLeft ? 'marginRight' : 'marginLeft'] = (-e) + 'px';
-          var b = f.fig.getBoundingClientRect(), hit = false;
-          for (var t = 0; t < text.length; t++) {
-            var q = text[t];
-            if (b.right + 10 > q.left && b.left - 10 < q.right && (PARALLAX || (b.bottom + 6 > q.top && b.top - 6 < q.bottom))) { hit = true; break; }
-          }
-          if (!hit) break;
+      // No photo covers text. GIFs: original size. Still photos: up to PHOTO_SCALE x bigger, back to original size if
+      // that would cover text. The top photo is pushed down below the flags/tagline if needed.
+      var isGif = /\.gif$/i.test(f.img.getAttribute('src') || '');
+      var avoid = text.concat(head);
+      var inner = isLeft ? 'marginRight' : 'marginLeft';
+      var cands = [];
+      for (var e = want; e >= 0; e -= 6) {
+        var base = Math.min(colW + e, 600);
+        if (isGif) cands.push([base, -e]);
+        else { var sw = Math.round(base * PHOTO_SCALE); cands.push([sw, -Math.max(0, sw - colW)]); }
+      }
+      if (!isGif) cands.push([Math.min(colW, 600), 0]);
+      for (var c = 0; c < cands.length; c++) {
+        f.fig.style.width = cands[c][0] + 'px';
+        f.fig.style[inner] = cands[c][1] + 'px';
+        var b = f.fig.getBoundingClientRect(), hit = false;
+        for (var t = 0; t < avoid.length; t++) {
+          var q = avoid[t];
+          if (b.right + 10 > q.left && b.left - 10 < q.right && b.bottom + 6 > q.top && b.top - 6 < q.bottom) { hit = true; break; }
         }
-      } else {
-        // Still photos: PHOTO_SCALE x bigger and may sit behind the text (main is drawn on top of them)
-        var w = Math.round(Math.min(colW + want, 600) * PHOTO_SCALE);
-        f.fig.style.width = w + 'px';
-        f.fig.style[isLeft ? 'marginRight' : 'marginLeft'] = (-Math.max(0, w - colW)) + 'px';
+        if (!hit) break;
+      }
+      // Still overlapping the flags/tagline at the top? Push the photo down until it clears them
+      f.fig.style.marginTop = '';
+      for (var dn = 0; dn < 400; dn += 8) {
+        var bb = f.fig.getBoundingClientRect(), hh = false;
+        for (var u = 0; u < head.length; u++) {
+          var hq = head[u];
+          if (bb.right + 10 > hq.left && bb.left - 10 < hq.right && bb.bottom + 6 > hq.top && bb.top - 6 < hq.bottom) { hh = true; break; }
+        }
+        if (!hh) break;
+        f.fig.style.marginTop = (dn + 8) + 'px';
       }
     });
     }
@@ -558,34 +604,10 @@
   function spreadPhotos() {
     document.querySelectorAll('.side').forEach(function (s) { s.style.gap = PHOTO_GAP + 'px'; });
   }
-  // Parallax: side photos drift down slowly while the page scrolls, so they move slower than the text
-  var PARALLAX_RATE = 0.4;
-  var PARALLAX = !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-  var parallaxQueued = false;
-  function parallax() {
-    parallaxQueued = false;
-    var wide = window.innerWidth >= 1200;
-    document.querySelectorAll('.side').forEach(function (s) {
-      if (!wide || !PARALLAX) { s.style.transform = ''; return; }
-      var figs = Array.prototype.filter.call(s.children, function (f) { return !f.hidden; });
-      if (!figs.length) return;
-      var last = figs[figs.length - 1];
-      var room = s.clientHeight - parseFloat(getComputedStyle(s).paddingBottom) - (last.offsetTop + last.offsetHeight);
-      var top = s.getBoundingClientRect().top + window.pageYOffset - parseFloat(s.style.transform.replace(/[^0-9.\-]/g, '') || 0);
-      var y = Math.max(0, Math.min(room, (window.pageYOffset - top + 120) * PARALLAX_RATE));
-      s.style.transform = 'translateY(' + Math.round(y) + 'px)';
-    });
-  }
-  function queueParallax() {
-    if (parallaxQueued) return;
-    parallaxQueued = true;
-    requestAnimationFrame(parallax);
-  }
-  window.addEventListener('scroll', queueParallax, { passive: true });
   function queueLayout() {
     if (pending) return;
     pending = true;
-    requestAnimationFrame(function () { pending = false; layoutPhotos(); parallax(); });
+    requestAnimationFrame(function () { pending = false; layoutPhotos(); });
   }
   window.addEventListener('resize', queueLayout);
   window.addEventListener('load', queueLayout);
@@ -614,10 +636,10 @@
       f.fig.hidden = false;
       if (f.img.getAttribute('src') !== p) f.img.src = p;
     });
+    balancePhotos();
     cur = l;
     try { localStorage.setItem('la-lang', l); } catch (e) {}
     layoutPhotos();
-    parallax();
   }
 
   buttons.forEach(function (b) {

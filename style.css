@@ -268,5 +268,10 @@
   .side { position: relative; z-index: 1; }
 }
 
+/* Side photos start just under the banner (JS lifts the columns) */
+@media (min-width: 1200px) {
+  .side, .layout > .side:first-child { padding-top: 16px; }
+}
+
 /* Trailer inside About, above the More link */
 #about .trailer { margin: 22px 0 6px; }
