@@ -636,6 +636,10 @@
       f.fig.hidden = false;
       if (f.img.getAttribute('src') !== p) f.img.src = p;
     });
+    document.querySelectorAll('img[data-photo]').forEach(function (im) {
+      var p = photoPath(l, im.getAttribute('data-photo'));
+      if (p && im.getAttribute('src') !== p) im.src = p;
+    });
     balancePhotos();
     cur = l;
     try { localStorage.setItem('la-lang', l); } catch (e) {}
