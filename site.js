@@ -444,7 +444,7 @@
     6: 'Seaside town and lighthouse seen through clouds', 7: 'Alien at the control panel',
     8: 'One-eyed alien next to a glass globe', 9: 'Flying saucer in an orange sky',
     10: 'Kitchen with a dog and a cake on the table', 11: 'Living room with a cat asleep on the sofa',
-    12: 'Globe on a wooden table', 13: 'Teacher in front of a blackboard',
+    12: 'Red alien with one eye', 13: 'Teacher in front of a blackboard',
     14: 'Four little aliens: don\'t worry, they don\'t bite', 15: 'Folded checked napkin',
     16: 'One-eyed alien beside a glass globe',
     17: 'A flowerpot: a pot with a flower in it'
