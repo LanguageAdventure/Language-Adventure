@@ -456,8 +456,8 @@
     17: 'A flowerpot: a pot with a flower in it'
   };
 
-  // Side photo size multiplier (1 = original size)
-  var PHOTO_SCALE = 1.2;
+  // Still-photo size multiplier (1 = original size); GIFs always stay original size
+  var PHOTO_SCALE = 1.08;
 
   var nav = document.getElementById('flags');
   nav.innerHTML = "<button type=\"button\" data-lang=\"en\" aria-label=\"English\" title=\"English\"><img src=\"img/flags/en.png\" alt=\"\" width=\"180\" height=\"120\"></button><button type=\"button\" data-lang=\"fr\" aria-label=\"Fran\u00e7ais\" title=\"Fran\u00e7ais\"><img src=\"img/flags/fr.png\" alt=\"\" width=\"180\" height=\"120\"></button><button type=\"button\" data-lang=\"es\" aria-label=\"Espa\u00f1ol\" title=\"Espa\u00f1ol\"><img src=\"img/flags/es.png\" alt=\"\" width=\"180\" height=\"120\"></button><button type=\"button\" data-lang=\"pt\" aria-label=\"Portugu\u00eas\" title=\"Portugu\u00eas\"><img src=\"img/flags/pt.png\" alt=\"\" width=\"180\" height=\"120\"></button><button type=\"button\" data-lang=\"de\" aria-label=\"Deutsch\" title=\"Deutsch\"><img src=\"img/flags/de.png\" alt=\"\" width=\"180\" height=\"120\"></button><button type=\"button\" data-lang=\"it\" aria-label=\"Italiano\" title=\"Italiano\"><img src=\"img/flags/it.png\" alt=\"\" width=\"180\" height=\"120\"></button>";
@@ -526,10 +526,24 @@
       var k = count[isLeft ? 0 : 1]++;
       var colW = side.clientWidth - 30;
       var want = ENCROACH[(k * 3 + (isLeft ? 0 : 2)) % ENCROACH.length];
-      // Photos are PHOTO_SCALE x bigger and may sit behind the text (main is drawn on top of them)
-      var w = Math.round(Math.min(colW + want, 600) * PHOTO_SCALE);
-      f.fig.style.width = w + 'px';
-      f.fig.style[isLeft ? 'marginRight' : 'marginLeft'] = (-Math.max(0, w - colW)) + 'px';
+      if (/\.gif$/i.test(f.img.getAttribute('src') || '')) {
+        // GIFs: original size, step in towards the text but never cover it
+        for (var e = want; e >= 0; e -= 6) {
+          f.fig.style.width = Math.min(colW + e, 600) + 'px';
+          f.fig.style[isLeft ? 'marginRight' : 'marginLeft'] = (-e) + 'px';
+          var b = f.fig.getBoundingClientRect(), hit = false;
+          for (var t = 0; t < text.length; t++) {
+            var q = text[t];
+            if (b.right + 10 > q.left && b.left - 10 < q.right && b.bottom + 6 > q.top && b.top - 6 < q.bottom) { hit = true; break; }
+          }
+          if (!hit) break;
+        }
+      } else {
+        // Still photos: PHOTO_SCALE x bigger and may sit behind the text (main is drawn on top of them)
+        var w = Math.round(Math.min(colW + want, 600) * PHOTO_SCALE);
+        f.fig.style.width = w + 'px';
+        f.fig.style[isLeft ? 'marginRight' : 'marginLeft'] = (-Math.max(0, w - colW)) + 'px';
+      }
     });
     }
     for (var pass = 0; pass < 3; pass++) {
