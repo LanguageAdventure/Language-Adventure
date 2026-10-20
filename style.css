@@ -293,7 +293,7 @@
 
   /* Mailing list signup (above the contact footer) */
   .join { text-align: center; padding: 34px 18px 6px; max-width: 520px; margin: 0 auto; }
-  .join h2 { font-size: clamp(1.8rem, 4.5vw, 2.4rem); }
+  .join h2 { font-size: clamp(2.2rem, 5vw, 3.1rem); margin: 0 0 14px; }
   .join p { margin: 6px 0 14px; }
   .join .fld { text-align: left; }
   .join-form { margin: 0; }
@@ -307,7 +307,7 @@
   .letter-btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; border-radius: 12px; }
   .letter-btn img { width: 120px; height: 120px; display: block; filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
   .join-form { margin-top: 8px; }
-  .support-end h2 { font-size: clamp(1.8rem, 4.5vw, 2.4rem); margin: 0 0 4px; }
+  .support-end h2 { font-size: clamp(2.2rem, 5vw, 3.1rem); margin: 0 0 4px; }
   .strip-bottom { max-width: 640px; margin: 10px auto 34px; padding: 0 18px; }
   .strip-bottom .strip { margin: 0; }
 
