@@ -283,3 +283,7 @@
 @media (min-width: 1200px) {
   .inline-photo { display: none; }
 }
+
+  /* FAQ scene headers */
+  details.faq .ans h4.scene { font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 700; font-size: 1.05rem; margin: 14px 0 2px; }
+  details.faq .ans h4.scene + p { margin-top: 0; }
