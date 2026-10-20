@@ -302,7 +302,7 @@
   .join-form[hidden] { display: none; }
 
   /* Letter icon opens the mailing list form */
-  .letter-btn { background: none; border: 0; padding: 0; margin: 4px auto 10px; cursor: pointer; display: block; transition: transform .15s; }
+  .letter-btn { background: none; border: 0; padding: 0; margin: 0 auto -18px; cursor: pointer; display: block; transition: transform .15s; }
   .letter-btn:hover { transform: translateY(-2px); }
   .letter-btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; border-radius: 12px; }
   .letter-btn img { width: 120px; height: 120px; display: block; filter: drop-shadow(0 2px 3px rgba(0,0,0,.3)); }
@@ -313,3 +313,4 @@
 
   .playtest-end { max-width: 620px; margin: 0 auto; padding: 30px 18px 6px; }
   .give img { width: 120px; }
+  #join-status:empty { display: none; }

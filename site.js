@@ -8,7 +8,7 @@
       "playtestBtn": "Click here",
       "contactTitle": "Contact",
       "joinTitle": "Join the mailing list",
-      "joinText": "Demo news, behind the scenes and release updates. No spam.",
+      "joinText": "Join the mailing list and I'll let you know when things are happening!",
       "joinEmail": "Your email address",
       "joinBtn": "Join",
       "joinSending": "Joining…",
@@ -134,7 +134,7 @@
       "playtestBtn": "Cliquez ici",
       "contactTitle": "Contact",
       "joinTitle": "Rejoindre la liste de diffusion",
-      "joinText": "Actualités de la démo, coulisses et sorties. Pas de spam.",
+      "joinText": "Rejoignez la liste de diffusion et je vous préviendrai dès qu'il se passe quelque chose !",
       "joinEmail": "Votre adresse e-mail",
       "joinBtn": "S'inscrire",
       "joinSending": "Inscription…",
@@ -260,7 +260,7 @@
       "playtestBtn": "Haz clic aquí",
       "contactTitle": "Contacto",
       "joinTitle": "Únete a la lista de correo",
-      "joinText": "Novedades de la demo, entre bastidores y lanzamientos. Sin spam.",
+      "joinText": "¡Únete a la lista de correo y te avisaré cuando pasen cosas!",
       "joinEmail": "Tu correo electrónico",
       "joinBtn": "Unirme",
       "joinSending": "Enviando…",
@@ -386,7 +386,7 @@
       "playtestBtn": "Clique aqui",
       "contactTitle": "Contacto",
       "joinTitle": "Junta-te à lista de correio",
-      "joinText": "Novidades da demo, bastidores e lançamentos. Sem spam.",
+      "joinText": "Junta-te à lista de correio e eu aviso-te quando houver novidades!",
       "joinEmail": "O teu e-mail",
       "joinBtn": "Juntar-me",
       "joinSending": "A enviar…",
@@ -512,7 +512,7 @@
       "playtestBtn": "Hier klicken",
       "contactTitle": "Kontakt",
       "joinTitle": "Tritt der Mailingliste bei",
-      "joinText": "Neuigkeiten zur Demo, Einblicke hinter die Kulissen und Release-Infos. Kein Spam.",
+      "joinText": "Tritt der Mailingliste bei, dann sage ich dir Bescheid, sobald sich etwas tut!",
       "joinEmail": "Deine E-Mail-Adresse",
       "joinBtn": "Anmelden",
       "joinSending": "Wird gesendet…",
@@ -638,7 +638,7 @@
       "playtestBtn": "Clicca qui",
       "contactTitle": "Contatti",
       "joinTitle": "Iscriviti alla mailing list",
-      "joinText": "Novità sulla demo, dietro le quinte e aggiornamenti sull'uscita. Niente spam.",
+      "joinText": "Iscriviti alla mailing list e ti farò sapere quando succede qualcosa!",
       "joinEmail": "Il tuo indirizzo e-mail",
       "joinBtn": "Iscriviti",
       "joinSending": "Invio…",
@@ -925,8 +925,20 @@
   }
   // Photos are bunched together (fixed gap) instead of spread over the whole column
   var PHOTO_GAP = 26;
+  var PHOTO_GAP_MAX = 240;
   function spreadPhotos() {
-    document.querySelectorAll('.side').forEach(function (s) { s.style.gap = PHOTO_GAP + 'px'; });
+    // Spread each column's photos down the full page height, within a sensible gap range
+    document.querySelectorAll('.side').forEach(function (s) {
+      var vis = Array.prototype.filter.call(s.children, function (c) { return !c.hidden && c.offsetHeight; });
+      var gap = PHOTO_GAP;
+      if (vis.length > 1) {
+        var cs = getComputedStyle(s);
+        var avail = s.clientHeight - (parseFloat(cs.paddingTop) || 0) - (parseFloat(cs.paddingBottom) || 0);
+        var sum = vis.reduce(function (a, c) { return a + c.offsetHeight; }, 0);
+        gap = Math.max(PHOTO_GAP, Math.min(PHOTO_GAP_MAX, (avail - sum) / (vis.length - 1)));
+      }
+      s.style.gap = Math.round(gap) + 'px';
+    });
   }
   function queueLayout() {
     if (pending) return;
