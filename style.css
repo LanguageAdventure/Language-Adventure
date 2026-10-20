@@ -126,7 +126,6 @@
   .support-block { text-align: center; margin-top: 44px; }
   .support-block p { max-width: 560px; margin: 0 auto 18px; }
   .thanks { text-align: center; font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 700; font-size: 1.4rem; margin-top: 48px; }
-  .ai-close { margin-top: 28px; font-weight: 800; }
 
   /* Banner with logo on top */
   .top { padding: 0; }
@@ -172,7 +171,6 @@
   details.faq .ans { padding: 0 0 16px; }
   details.faq .ans p { margin: 0 0 10px; }
   details.faq .ans h3 { margin-top: 14px; }
-  .ans .ai-close { margin-top: 14px; }
 
   .center { text-align: center; }
   .note { text-align: center; font-size: .95rem; opacity: .85; margin: 6px 0 0; }

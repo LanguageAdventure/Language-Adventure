@@ -30,8 +30,6 @@
       "b2": "Teaches English to non-native speakers, for beginners and intermediate learners of all ages",
       "b6": "It's currently for learning English.",
       "b7": "To begin with, PC (Windows, Mac and Linux).<br>The demo is available on request so you can playtest it before the January release. <a href=\"demo.html\">Request it here</a>.",
-      "aiTitle": "AI usage",
-      "aiClose": "Everything you see and hear in Language Adventure is made by humans.",
       "faqTitle": "Frequently asked questions",
       "faqLink": "More about the game…",
       "q1": "What is Language Adventure?",
@@ -98,15 +96,14 @@
       "formErr": "Sorry, something went wrong. Please try again in a moment.",
       "langName": "English",
       "comingFirst": "It has subtitles in French, German, Spanish, Portuguese and Italian, with more coming soon.",
-      "ai1": "Writing Lua scripts for Visionaire Studio, e.g. getting the engine to display subtitles in two different languages at once.",
-      "ai2": "Helping draft subtitle translations into other languages.",
       "back": "Back",
       "patreonTitle": "Patreon",
       "kofiTitle": "Ko-fi",
       "f1d": "Every scene is handmade and brought to life frame by frame in stop motion.",
       "f2d": "A point and click adventure: solve logical puzzles and explore a (very) small town!",
       "f3d": "Suitable for all ages",
-      "f4d": "Follow the story with subtitles in French, Spanish, Portuguese, German, Italian and more."
+      "f4d": "Follow the story with subtitles in French, Spanish, Portuguese, German, Italian and more.",
+      "f5d": "Narrated by Adam Buxton"
     },
     "fr": {
       "tagline": "Un jeu d'apprentissage des langues animé en stop motion.",
@@ -138,8 +135,6 @@
       "b2": "Enseigne l'anglais aux non-anglophones, pour apprenants débutants et intermédiaires de tous âges",
       "b6": "Actuellement, il sert à apprendre l'anglais.",
       "b7": "Pour commencer, sur PC (Windows, Mac et Linux).<br>La démo est disponible sur demande pour la tester avant la sortie en janvier. <a href=\"demo.html\">Demandez-la ici</a>.",
-      "aiTitle": "Utilisation de l'IA",
-      "aiClose": "Tout ce que vous voyez et entendez dans Language Adventure est fait par des humains.",
       "faqTitle": "Questions fréquentes",
       "faqLink": "En savoir plus sur le jeu…",
       "q1": "Qu'est-ce que Language Adventure ?",
@@ -206,15 +201,14 @@
       "formErr": "Désolé, un problème est survenu. Veuillez réessayer dans un instant.",
       "langName": "Français",
       "comingFirst": "Il est sous-titré en français, allemand, espagnol, portugais et italien, avec d'autres langues bientôt.",
-      "ai1": "Écrire des scripts Lua pour Visionaire Studio, par ex. faire afficher au moteur des sous-titres dans deux langues différentes en même temps.",
-      "ai2": "Aider à rédiger des traductions de sous-titres dans d'autres langues.",
       "back": "Retour",
       "patreonTitle": "Patreon",
       "kofiTitle": "Ko-fi",
       "f1d": "Chaque scène est faite à la main et prend vie image par image en stop motion.",
       "f2d": "Un jeu d'aventure point and click : résolvez des énigmes logiques et explorez une (toute) petite ville !",
       "f3d": "Convient à tous les âges",
-      "f4d": "Suivez l'histoire avec des sous-titres en français, espagnol, portugais, allemand, italien et plus encore."
+      "f4d": "Suivez l'histoire avec des sous-titres en français, espagnol, portugais, allemand, italien et plus encore.",
+      "f5d": "Narré par Adam Buxton"
     },
     "es": {
       "tagline": "Un juego de aprendizaje de idiomas animado en stop motion.",
@@ -246,8 +240,6 @@
       "b2": "Enseña inglés a hablantes no nativos, para estudiantes principiantes e intermedios de todas las edades",
       "b6": "Por ahora es para aprender inglés.",
       "b7": "Para empezar, en PC (Windows, Mac y Linux).<br>La demo está disponible bajo petición para que la pruebes antes del lanzamiento en enero. <a href=\"demo.html\">Pídela aquí</a>.",
-      "aiTitle": "Uso de IA",
-      "aiClose": "Todo lo que ves y oyes en Language Adventure está hecho por humanos.",
       "faqTitle": "Preguntas frecuentes",
       "faqLink": "Más sobre el juego…",
       "q1": "¿Qué es Language Adventure?",
@@ -314,15 +306,14 @@
       "formErr": "Lo siento, algo ha salido mal. Inténtalo de nuevo en un momento.",
       "langName": "Español",
       "comingFirst": "Tiene subtítulos en francés, alemán, español, portugués e italiano, y pronto llegarán más.",
-      "ai1": "Escribir scripts Lua para Visionaire Studio, p. ej. hacer que el motor muestre subtítulos en dos idiomas distintos a la vez.",
-      "ai2": "Ayudar a redactar traducciones de subtítulos a otros idiomas.",
       "back": "Volver",
       "patreonTitle": "Patreon",
       "kofiTitle": "Ko-fi",
       "f1d": "Cada escena está hecha a mano y cobra vida fotograma a fotograma en stop motion.",
       "f2d": "Una aventura point and click: ¡resuelve puzles lógicos y explora un pueblo (muy) pequeño!",
       "f3d": "Apto para todas las edades",
-      "f4d": "Sigue la historia con subtítulos en francés, español, portugués, alemán, italiano y más."
+      "f4d": "Sigue la historia con subtítulos en francés, español, portugués, alemán, italiano y más.",
+      "f5d": "Narrado por Adam Buxton"
     },
     "pt": {
       "tagline": "Um jogo de aprendizagem de línguas animado em stop motion.",
@@ -354,8 +345,6 @@
       "b2": "Ensina inglês a falantes não nativos, para estudantes principiantes e intermédios de todas as idades",
       "b6": "Por agora é para aprender inglês.",
       "b7": "Para começar, em PC (Windows, Mac e Linux).<br>A demo está disponível a pedido para a poder testar antes do lançamento em janeiro. <a href=\"demo.html\">Peça-a aqui</a>.",
-      "aiTitle": "Uso de IA",
-      "aiClose": "Tudo o que vê e ouve em Language Adventure é feito por humanos.",
       "faqTitle": "Perguntas frequentes",
       "faqLink": "Mais sobre o jogo…",
       "q1": "O que é o Language Adventure?",
@@ -422,15 +411,14 @@
       "formErr": "Desculpe, algo correu mal. Tente novamente daqui a pouco.",
       "langName": "Português",
       "comingFirst": "Tem legendas em francês, alemão, espanhol, português e italiano, e mais vão chegar em breve.",
-      "ai1": "Escrever scripts Lua para o Visionaire Studio, por ex. fazer o motor mostrar legendas em duas línguas diferentes ao mesmo tempo.",
-      "ai2": "Ajudar a redigir traduções de legendas para outras línguas.",
       "back": "Voltar",
       "patreonTitle": "Patreon",
       "kofiTitle": "Ko-fi",
       "f1d": "Cada cena é feita à mão e ganha vida fotograma a fotograma em stop motion.",
       "f2d": "Uma aventura point and click: resolva puzzles lógicos e explore uma pequena (muito pequena) cidade!",
       "f3d": "Adequado a todas as idades",
-      "f4d": "Acompanhe a história com legendas em francês, espanhol, português, alemão, italiano e mais."
+      "f4d": "Acompanhe a história com legendas em francês, espanhol, português, alemão, italiano e mais.",
+      "f5d": "Narrado por Adam Buxton"
     },
     "de": {
       "tagline": "Ein in Stop-Motion animiertes Sprachlernspiel.",
@@ -462,8 +450,6 @@
       "b2": "Bringt Nicht-Muttersprachlern Englisch bei, für Anfänger und Lernende der Mittelstufe jeden Alters",
       "b6": "Derzeit ist es zum Englischlernen.",
       "b7": "Zunächst auf dem PC (Windows, Mac und Linux).<br>Die Demo gibt es auf Anfrage, damit du sie vor der Veröffentlichung im Januar testen kannst. <a href=\"demo.html\">Hier anfragen</a>.",
-      "aiTitle": "Einsatz von KI",
-      "aiClose": "Alles, was du in Language Adventure siehst und hörst, wird von Menschen gemacht.",
       "faqTitle": "Häufige Fragen",
       "faqLink": "Mehr über das Spiel…",
       "q1": "Was ist Language Adventure?",
@@ -530,15 +516,14 @@
       "formErr": "Entschuldigung, etwas ist schiefgelaufen. Bitte versuch es gleich noch einmal.",
       "langName": "Deutsch",
       "comingFirst": "Es hat Untertitel auf Französisch, Deutsch, Spanisch, Portugiesisch und Italienisch, weitere folgen bald.",
-      "ai1": "Lua-Skripte für Visionaire Studio schreiben, z. B. damit die Engine Untertitel in zwei verschiedenen Sprachen gleichzeitig anzeigt.",
-      "ai2": "Beim Entwurf von Untertitelübersetzungen in andere Sprachen helfen.",
       "back": "Zurück",
       "patreonTitle": "Patreon",
       "kofiTitle": "Ko-fi",
       "f1d": "Jede Szene ist handgemacht und wird Bild für Bild in Stop-Motion zum Leben erweckt.",
       "f2d": "Ein Point-and-Click-Adventure: Löse logische Rätsel und erkunde eine (sehr) kleine Stadt!",
       "f3d": "Für alle Altersgruppen geeignet",
-      "f4d": "Verfolge die Geschichte mit Untertiteln auf Französisch, Spanisch, Portugiesisch, Deutsch, Italienisch und mehr."
+      "f4d": "Verfolge die Geschichte mit Untertiteln auf Französisch, Spanisch, Portugiesisch, Deutsch, Italienisch und mehr.",
+      "f5d": "Erzählt von Adam Buxton"
     },
     "it": {
       "tagline": "Un gioco per imparare le lingue animato in stop motion.",
@@ -570,8 +555,6 @@
       "b2": "Insegna l'inglese a chi non è madrelingua, per studenti principianti e intermedi di tutte le età",
       "b6": "Per ora serve a imparare l'inglese.",
       "b7": "Per iniziare, su PC (Windows, Mac e Linux).<br>La demo è disponibile su richiesta per provarla prima dell'uscita a gennaio. <a href=\"demo.html\">Richiedila qui</a>.",
-      "aiTitle": "Uso dell'IA",
-      "aiClose": "Tutto ciò che vedi e senti in Language Adventure è fatto da esseri umani.",
       "faqTitle": "Domande frequenti",
       "faqLink": "Scopri di più sul gioco…",
       "q1": "Che cos'è Language Adventure?",
@@ -638,15 +621,14 @@
       "formErr": "Spiacente, qualcosa è andato storto. Riprova tra un momento.",
       "langName": "Italiano",
       "comingFirst": "Ha sottotitoli in francese, tedesco, spagnolo, portoghese e italiano, con altri in arrivo.",
-      "ai1": "Scrivere script Lua per Visionaire Studio, ad es. far mostrare al motore sottotitoli in due lingue diverse contemporaneamente.",
-      "ai2": "Aiutare a redigere traduzioni dei sottotitoli in altre lingue.",
       "back": "Indietro",
       "patreonTitle": "Patreon",
       "kofiTitle": "Ko-fi",
       "f1d": "Ogni scena è fatta a mano e prende vita fotogramma dopo fotogramma in stop motion.",
       "f2d": "Un'avventura point and click: risolvi enigmi logici ed esplora una cittadina (molto) piccola!",
       "f3d": "Adatto a tutte le età",
-      "f4d": "Segui la storia con sottotitoli in francese, spagnolo, portoghese, tedesco, italiano e altro."
+      "f4d": "Segui la storia con sottotitoli in francese, spagnolo, portoghese, tedesco, italiano e altro.",
+      "f5d": "Narrato da Adam Buxton"
     }
   };
 
