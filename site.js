@@ -4,6 +4,15 @@
       "tagline": "A stop motion animated language learning game.",
       "tagline2": "Learn English with a stop-motion adventure.",
       "wishSteam": "Wishlist on Steam",
+      "q11": "Mistakes?",
+      "a11": "We all make mistakes, especially me! If you spot an error on the website or in the game please let me know below…",
+      "errLabel": "What did you spot?",
+      "errEmail": "Your email (optional, only if you'd like a reply)",
+      "errBtn": "Send",
+      "errSending": "Sending…",
+      "errOk": "Thank you! Your report has been sent.",
+      "errErr": "Sorry, that didn't send. Please try again.",
+      "errSubject": "Mistake report - Language Adventure",
       "aboutTitle": "About the game",
       "aboutP1": "Learn <strong>English</strong> in a handmade town by interacting with objects and characters in stop motion animated scenes. Talk to the characters and discover how words work in real situations.",
       "playtestTitle": "Play the demo early!",
@@ -109,6 +118,15 @@
       "tagline": "Un jeu d'apprentissage des langues animé en stop motion.",
       "tagline2": "Apprenez l'anglais avec une aventure en stop motion.",
       "wishSteam": "Ajouter à la wishlist Steam",
+      "q11": "Des erreurs ?",
+      "a11": "Nous faisons tous des erreurs, moi le premier ! Si vous repérez une erreur sur le site ou dans le jeu, dites-le-moi ci-dessous…",
+      "errLabel": "Qu'avez-vous repéré ?",
+      "errEmail": "Votre e-mail (facultatif, seulement si vous souhaitez une réponse)",
+      "errBtn": "Envoyer",
+      "errSending": "Envoi…",
+      "errOk": "Merci ! Votre message a bien été envoyé.",
+      "errErr": "Désolé, l'envoi a échoué. Veuillez réessayer.",
+      "errSubject": "Signalement d'erreur - Language Adventure",
       "aboutTitle": "À propos du jeu",
       "aboutP1": "Apprenez l'<strong>anglais</strong> dans une ville faite à la main en interagissant avec des objets et des personnages dans des scènes animées en stop motion. Parlez aux personnages et découvrez comment les mots fonctionnent dans des situations réelles.",
       "playtestTitle": "Jouez à la démo en avance !",
@@ -214,6 +232,15 @@
       "tagline": "Un juego de aprendizaje de idiomas animado en stop motion.",
       "tagline2": "Aprende inglés con una aventura en stop motion.",
       "wishSteam": "Añadir a la lista de deseos de Steam",
+      "q11": "¿Errores?",
+      "a11": "¡Todos cometemos errores, yo el primero! Si ves un error en la web o en el juego, cuéntamelo aquí abajo…",
+      "errLabel": "¿Qué has visto?",
+      "errEmail": "Tu correo (opcional, solo si quieres una respuesta)",
+      "errBtn": "Enviar",
+      "errSending": "Enviando…",
+      "errOk": "¡Gracias! Tu mensaje se ha enviado.",
+      "errErr": "Lo siento, no se pudo enviar. Inténtalo de nuevo.",
+      "errSubject": "Aviso de error - Language Adventure",
       "aboutTitle": "Sobre el juego",
       "aboutP1": "Aprende <strong>inglés</strong> en una ciudad hecha a mano interactuando con objetos y personajes en escenas animadas en stop motion. Habla con los personajes y descubre cómo funcionan las palabras en situaciones reales.",
       "playtestTitle": "¡Juega la demo antes de tiempo!",
@@ -319,6 +346,15 @@
       "tagline": "Um jogo de aprendizagem de línguas animado em stop motion.",
       "tagline2": "Aprenda inglês com uma aventura em stop motion.",
       "wishSteam": "Adicionar à lista de desejos do Steam",
+      "q11": "Erros?",
+      "a11": "Todos cometemos erros, eu mais do que ninguém! Se encontrar um erro no site ou no jogo, diga-me abaixo…",
+      "errLabel": "O que encontrou?",
+      "errEmail": "O seu e-mail (opcional, só se quiser resposta)",
+      "errBtn": "Enviar",
+      "errSending": "A enviar…",
+      "errOk": "Obrigado! A sua mensagem foi enviada.",
+      "errErr": "Desculpe, não foi possível enviar. Tente novamente.",
+      "errSubject": "Aviso de erro - Language Adventure",
       "aboutTitle": "Sobre o jogo",
       "aboutP1": "Aprenda <strong>inglês</strong> numa cidade feita à mão, interagindo com objetos e personagens em cenas animadas em stop motion. Fale com as personagens e descubra como as palavras funcionam em situações reais.",
       "playtestTitle": "Jogue a demo antecipadamente!",
@@ -424,6 +460,15 @@
       "tagline": "Ein in Stop-Motion animiertes Sprachlernspiel.",
       "tagline2": "Lerne Englisch mit einem Stop-Motion-Abenteuer.",
       "wishSteam": "Auf die Steam-Wunschliste",
+      "q11": "Fehler?",
+      "a11": "Wir alle machen Fehler, besonders ich! Wenn dir auf der Website oder im Spiel ein Fehler auffällt, sag es mir bitte unten…",
+      "errLabel": "Was ist dir aufgefallen?",
+      "errEmail": "Deine E-Mail (optional, nur wenn du eine Antwort möchtest)",
+      "errBtn": "Senden",
+      "errSending": "Wird gesendet…",
+      "errOk": "Danke! Deine Meldung wurde gesendet.",
+      "errErr": "Leider hat das nicht geklappt. Bitte versuche es erneut.",
+      "errSubject": "Fehlermeldung - Language Adventure",
       "aboutTitle": "Über das Spiel",
       "aboutP1": "Lerne <strong>Englisch</strong> in einer handgemachten Stadt, indem du mit Objekten und Figuren in Stop-Motion-animierten Szenen interagierst. Sprich mit den Figuren und entdecke, wie Wörter in echten Situationen funktionieren.",
       "playtestTitle": "Spiel die Demo vorab!",
@@ -529,6 +574,15 @@
       "tagline": "Un gioco per imparare le lingue animato in stop motion.",
       "tagline2": "Impara l'inglese con un'avventura in stop motion.",
       "wishSteam": "Aggiungi alla lista desideri di Steam",
+      "q11": "Errori?",
+      "a11": "Tutti commettiamo errori, io per primo! Se noti un errore sul sito o nel gioco, fammelo sapere qui sotto…",
+      "errLabel": "Cosa hai notato?",
+      "errEmail": "La tua email (facoltativa, solo se vuoi una risposta)",
+      "errBtn": "Invia",
+      "errSending": "Invio in corso…",
+      "errOk": "Grazie! La tua segnalazione è stata inviata.",
+      "errErr": "Spiacente, l'invio non è riuscito. Riprova.",
+      "errSubject": "Segnalazione di errore - Language Adventure",
       "aboutTitle": "Informazioni sul gioco",
       "aboutP1": "Impara l'<strong>inglese</strong> in una città fatta a mano interagendo con oggetti e personaggi in scene animate in stop motion. Parla con i personaggi e scopri come funzionano le parole in situazioni reali.",
       "playtestTitle": "Gioca la demo in anteprima!",
@@ -944,6 +998,44 @@
       }).catch(function () {
         jb.disabled = false;
         js_.textContent = T[cur].joinErr;
+      });
+    });
+  }
+
+  // Mistake reports (anonymous; sent by FormSubmit to the site owner's inbox)
+  var ef = document.getElementById('err-form');
+  if (ef) {
+    var es_ = document.getElementById('err-status');
+    var eb = ef.querySelector('button[type="submit"]');
+    ef.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var d = {};
+      new FormData(ef).forEach(function (v, k) { d[k] = v; });
+      if (d._honey) return;
+      if (!d.email) delete d.email;
+      d._subject = T[cur].errSubject;
+      d._template = 'table';
+      d._captcha = 'false';
+      d.page = location.pathname.split('/').pop() || 'index.html';
+      d.website_language = T[cur].langName;
+      eb.disabled = true;
+      es_.textContent = T[cur].errSending;
+      fetch('https://formsubmit.co/ajax/991c490e3a5f892537234eb38fdbd543', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(d)
+      }).then(function (r) {
+        if (!r.ok) throw new Error('bad status');
+        return r.json();
+      }).then(function (j) {
+        if (j && (j.success === true || j.success === 'true')) {
+          ef.hidden = true;
+          es_.textContent = T[cur].errOk;
+          es_.className = 'note ok';
+        } else { throw new Error('rejected'); }
+      }).catch(function () {
+        eb.disabled = false;
+        es_.textContent = T[cur].errErr;
       });
     });
   }

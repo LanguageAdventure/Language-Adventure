@@ -317,4 +317,5 @@
 
   .playtest-end { max-width: 620px; margin: 0 auto; padding: 30px 18px 6px; }
   .give img { width: 120px; }
-  #join-status:empty { display: none; }
+  #join-status:empty, #err-status:empty { display: none; }
+  .ans .join-form { text-align: left; margin-top: 14px; }
