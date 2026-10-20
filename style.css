@@ -287,3 +287,7 @@
   /* FAQ scene headers */
   details.faq .ans h4.scene { font-family: 'Fredoka', 'Nunito', sans-serif; font-weight: 700; font-size: 1.05rem; margin: 14px 0 2px; }
   details.faq .ans h4.scene + p { margin-top: 0; }
+
+  /* FAQ scene headers: smaller than the question */
+  details.faq .ans h3.scene { font-size: 1.05rem; margin: 14px 0 2px; color: inherit; text-shadow: none; }
+  details.faq .ans h3.scene + p { margin-top: 0; }
