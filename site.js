@@ -7,6 +7,15 @@
       "playtestTitle": "Would you like to play the demo early?",
       "playtestBtn": "Click here",
       "contactTitle": "Contact",
+      "joinTitle": "Join the mailing list",
+      "joinText": "Demo news, behind the scenes and release updates. No spam.",
+      "joinEmail": "Your email address",
+      "joinBtn": "Join",
+      "joinSending": "Joining…",
+      "joinOk": "Thank you! You're on the list.",
+      "joinErr": "Sorry, that didn't work. Please try again or email gameswonky@gmail.com.",
+      "joinSubject": "New mailing list signup",
+      "joinLabel": "Join the mailing list",
       "contactText": "Questions, feedback or press enquiries? Get in touch:",
       "rights": "All rights reserved.",
       "navSupport": "Support the game",
@@ -124,6 +133,15 @@
       "playtestTitle": "Envie de jouer à la démo en avance ?",
       "playtestBtn": "Cliquez ici",
       "contactTitle": "Contact",
+      "joinTitle": "Rejoindre la liste de diffusion",
+      "joinText": "Actualités de la démo, coulisses et sorties. Pas de spam.",
+      "joinEmail": "Votre adresse e-mail",
+      "joinBtn": "S'inscrire",
+      "joinSending": "Inscription…",
+      "joinOk": "Merci ! Vous êtes sur la liste.",
+      "joinErr": "Désolé, cela n'a pas fonctionné. Réessayez ou écrivez à gameswonky@gmail.com.",
+      "joinSubject": "Nouvelle inscription à la liste",
+      "joinLabel": "Rejoindre la liste de diffusion",
       "contactText": "Une question, un retour ou une demande presse ? Écrivez-nous :",
       "rights": "Tous droits réservés.",
       "navSupport": "Soutenir le jeu",
@@ -241,6 +259,15 @@
       "playtestTitle": "¿Quieres jugar la demo antes de tiempo?",
       "playtestBtn": "Haz clic aquí",
       "contactTitle": "Contacto",
+      "joinTitle": "Únete a la lista de correo",
+      "joinText": "Novedades de la demo, entre bastidores y lanzamientos. Sin spam.",
+      "joinEmail": "Tu correo electrónico",
+      "joinBtn": "Unirme",
+      "joinSending": "Enviando…",
+      "joinOk": "¡Gracias! Ya estás en la lista.",
+      "joinErr": "Lo sentimos, no ha funcionado. Inténtalo de nuevo o escribe a gameswonky@gmail.com.",
+      "joinSubject": "Nueva suscripción a la lista",
+      "joinLabel": "Únete a la lista de correo",
       "contactText": "¿Preguntas, comentarios o consultas de prensa? Escríbenos:",
       "rights": "Todos los derechos reservados.",
       "navSupport": "Apoya el juego",
@@ -358,6 +385,15 @@
       "playtestTitle": "Quer jogar a demo antecipadamente?",
       "playtestBtn": "Clique aqui",
       "contactTitle": "Contacto",
+      "joinTitle": "Junta-te à lista de correio",
+      "joinText": "Novidades da demo, bastidores e lançamentos. Sem spam.",
+      "joinEmail": "O teu e-mail",
+      "joinBtn": "Juntar-me",
+      "joinSending": "A enviar…",
+      "joinOk": "Obrigado! Já estás na lista.",
+      "joinErr": "Desculpa, não funcionou. Tenta novamente ou escreve para gameswonky@gmail.com.",
+      "joinSubject": "Nova subscrição da lista",
+      "joinLabel": "Junta-te à lista de correio",
       "contactText": "Dúvidas, comentários ou pedidos de imprensa? Entre em contacto:",
       "rights": "Todos os direitos reservados.",
       "navSupport": "Apoie o jogo",
@@ -475,6 +511,15 @@
       "playtestTitle": "Möchtest du die Demo vorab spielen?",
       "playtestBtn": "Hier klicken",
       "contactTitle": "Kontakt",
+      "joinTitle": "Tritt der Mailingliste bei",
+      "joinText": "Neuigkeiten zur Demo, Einblicke hinter die Kulissen und Release-Infos. Kein Spam.",
+      "joinEmail": "Deine E-Mail-Adresse",
+      "joinBtn": "Anmelden",
+      "joinSending": "Wird gesendet…",
+      "joinOk": "Danke! Du stehst auf der Liste.",
+      "joinErr": "Das hat leider nicht geklappt. Versuche es erneut oder schreibe an gameswonky@gmail.com.",
+      "joinSubject": "Neue Anmeldung zur Mailingliste",
+      "joinLabel": "Tritt der Mailingliste bei",
       "contactText": "Fragen, Feedback oder Presseanfragen? Melde dich bei uns:",
       "rights": "Alle Rechte vorbehalten.",
       "navSupport": "Spiel unterstützen",
@@ -592,6 +637,15 @@
       "playtestTitle": "Vuoi giocare la demo in anteprima?",
       "playtestBtn": "Clicca qui",
       "contactTitle": "Contatti",
+      "joinTitle": "Iscriviti alla mailing list",
+      "joinText": "Novità sulla demo, dietro le quinte e aggiornamenti sull'uscita. Niente spam.",
+      "joinEmail": "Il tuo indirizzo e-mail",
+      "joinBtn": "Iscriviti",
+      "joinSending": "Invio…",
+      "joinOk": "Grazie! Sei nella lista.",
+      "joinErr": "Spiacenti, non ha funzionato. Riprova o scrivi a gameswonky@gmail.com.",
+      "joinSubject": "Nuova iscrizione alla mailing list",
+      "joinLabel": "Iscriviti alla mailing list",
       "contactText": "Domande, commenti o richieste per la stampa? Scrivici:",
       "rights": "Tutti i diritti riservati.",
       "navSupport": "Sostieni il gioco",
@@ -913,6 +967,10 @@
     balancePhotos();
     cur = l;
     try { localStorage.setItem('la-lang', l); } catch (e) {}
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (n) {
+      var v = T[l][n.getAttribute('data-i18n-aria')];
+      if (v) { n.setAttribute('aria-label', v); n.setAttribute('title', v); }
+    });
     layoutPhotos();
   }
 
@@ -955,6 +1013,51 @@
       }).catch(function () {
         btn.disabled = false;
         status.textContent = T[cur].formErr;
+      });
+    });
+  }
+
+  // Mailing list signup (sent by FormSubmit to the site owner's inbox)
+  var jf = document.getElementById('join-form');
+  var jt = document.getElementById('join-toggle');
+  if (jf && jt) {
+    jt.addEventListener('click', function () {
+      var open = jf.hidden;
+      jf.hidden = !open;
+      jt.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) { var em = jf.querySelector('input[type="email"]'); if (em) em.focus(); layoutPhotos(); }
+    });
+  }
+  if (jf) {
+    var js_ = document.getElementById('join-status');
+    var jb = jf.querySelector('button[type="submit"]');
+    jf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var d = {};
+      new FormData(jf).forEach(function (v, k) { d[k] = v; });
+      if (d._honey) return;
+      d._subject = T[cur].joinSubject;
+      d._template = 'table';
+      d._captcha = 'false';
+      d.website_language = T[cur].langName;
+      jb.disabled = true;
+      js_.textContent = T[cur].joinSending;
+      fetch('https://formsubmit.co/ajax/gameswonky@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(d)
+      }).then(function (r) {
+        if (!r.ok) throw new Error('bad status');
+        return r.json();
+      }).then(function (j) {
+        if (j && (j.success === true || j.success === 'true')) {
+          jf.hidden = true;
+          js_.textContent = T[cur].joinOk;
+          js_.className = 'note ok';
+        } else { throw new Error('rejected'); }
+      }).catch(function () {
+        jb.disabled = false;
+        js_.textContent = T[cur].joinErr;
       });
     });
   }

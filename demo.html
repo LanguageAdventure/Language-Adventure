@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Nunito:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1792495848">
+<link rel="stylesheet" href="style.css?v=1792496737">
 <title>Play the demo early | Language Adventure</title>
 <meta name="description" content="Ask to play the Language Adventure demo early. No forms to fill in, just send an email.">
 </head>
@@ -70,12 +70,25 @@
 <aside class="side" data-photos="14,5" aria-hidden="true"></aside>
 </div>
 
+<section id="join" class="join" aria-labelledby="join-h">
+  <h2 id="join-h" data-i18n="joinTitle">Join the mailing list</h2>
+  <p data-i18n="joinText">Demo news, behind the scenes and release updates. No spam.</p>
+  <button type="button" id="join-toggle" class="letter-btn" aria-expanded="false" aria-controls="join-form" data-i18n-aria="joinLabel" aria-label="Join the mailing list" title="Join the mailing list"><img src="img/letter.png" alt="" width="120" height="120"></button>
+  <form id="join-form" class="join-form" action="#" method="post" hidden>
+    <label class="fld"><span data-i18n="joinEmail">Your email address</span>
+      <input type="email" name="email" required autocomplete="email"></label>
+    <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <input type="hidden" name="signup" value="mailing list">
+    <button class="btn" type="submit" data-i18n="joinBtn">Join</button>
+  </form>
+  <p id="join-status" class="note" role="status" aria-live="polite"></p>
+</section>
+
 <footer id="contact">
   <h2 data-i18n="contactTitle">Contact</h2>
   <p data-i18n="contactText"></p>
   <p><a href="mailto:gameswonky@gmail.com"><strong>gameswonky@gmail.com</strong></a></p>
   <ul class="social" aria-label="Links">
-    <li><a href="mailto:gameswonky@gmail.com" aria-label="Email" title="Email"><img src="img/letter.png" alt="" width="64" height="64"></a></li>
     <li><a href="https://www.patreon.com/c/LanguageAdventureEnglish" target="_blank" rel="noopener" aria-label="Patreon" title="Patreon"><img src="img/social/patreon.png" alt="" width="32" height="32"></a></li>
     <li><a href="https://ko-fi.com/languageadventure" target="_blank" rel="noopener" aria-label="Ko-fi" title="Ko-fi"><img src="img/social/kofi-cup.png" alt="" width="32" height="32"></a></li>
     <li><a href="https://www.instagram.com/wonky_games/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><img src="img/social/instagram.png" alt="" width="32" height="32"></a></li>
@@ -84,7 +97,7 @@
   </ul>
 </footer>
 
-<script src="site.js?v=1792495848"></script>
+<script src="site.js?v=1792496737"></script>
 <script data-goatcounter="https://languageadventure.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
