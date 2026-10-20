@@ -1,8 +1,7 @@
 (function () {
   var T = {
     "en": {
-      "tagline": "A stop motion animated language learning game.",
-      "tagline2": "Learn English with a stop-motion adventure.",
+      "tagline": "A stop-motion animated language learning adventure game",
       "wishSteam": "Wishlist on Steam",
       "q11": "Mistakes?",
       "a11": "We all make mistakes, especially me! If you spot an error on the website or in the game please let me know below…",
@@ -114,8 +113,7 @@
       "f5d": "Narrated by Adam Buxton"
     },
     "fr": {
-      "tagline": "Un jeu d'apprentissage des langues animé en stop motion.",
-      "tagline2": "Apprenez l'anglais avec une aventure en stop motion.",
+      "tagline": "Un jeu d'aventure d'apprentissage des langues animé en stop motion",
       "wishSteam": "Ajouter à la wishlist Steam",
       "q11": "Des erreurs ?",
       "a11": "Nous faisons tous des erreurs, moi le premier ! Si vous repérez une erreur sur le site ou dans le jeu, dites-le-moi ci-dessous…",
@@ -227,8 +225,7 @@
       "f5d": "Narré par Adam Buxton"
     },
     "es": {
-      "tagline": "Un juego de aprendizaje de idiomas animado en stop motion.",
-      "tagline2": "Aprende inglés con una aventura en stop motion.",
+      "tagline": "Un juego de aventuras de aprendizaje de idiomas animado en stop motion",
       "wishSteam": "Añadir a la lista de deseos de Steam",
       "q11": "¿Errores?",
       "a11": "¡Todos cometemos errores, yo el primero! Si ves un error en la web o en el juego, cuéntamelo aquí abajo…",
@@ -340,8 +337,7 @@
       "f5d": "Narrado por Adam Buxton"
     },
     "pt": {
-      "tagline": "Um jogo de aprendizagem de línguas animado em stop motion.",
-      "tagline2": "Aprenda inglês com uma aventura em stop motion.",
+      "tagline": "Um jogo de aventura de aprendizagem de línguas animado em stop motion",
       "wishSteam": "Adicionar à lista de desejos do Steam",
       "q11": "Erros?",
       "a11": "Todos cometemos erros, eu mais do que ninguém! Se encontrar um erro no site ou no jogo, diga-me abaixo…",
@@ -453,8 +449,7 @@
       "f5d": "Narrado por Adam Buxton"
     },
     "de": {
-      "tagline": "Ein in Stop-Motion animiertes Sprachlernspiel.",
-      "tagline2": "Lerne Englisch mit einem Stop-Motion-Abenteuer.",
+      "tagline": "Ein in Stop-Motion animiertes Sprachlern-Abenteuerspiel",
       "wishSteam": "Auf die Steam-Wunschliste",
       "q11": "Fehler?",
       "a11": "Wir alle machen Fehler, besonders ich! Wenn dir auf der Website oder im Spiel ein Fehler auffällt, sag es mir bitte unten…",
@@ -566,8 +561,7 @@
       "f5d": "Erzählt von Adam Buxton"
     },
     "it": {
-      "tagline": "Un gioco per imparare le lingue animato in stop motion.",
-      "tagline2": "Impara l'inglese con un'avventura in stop motion.",
+      "tagline": "Un gioco d'avventura per imparare le lingue animato in stop motion",
       "wishSteam": "Aggiungi alla lista desideri di Steam",
       "q11": "Errori?",
       "a11": "Tutti commettiamo errori, io per primo! Se noti un errore sul sito o nel gioco, fammelo sapere qui sotto…",

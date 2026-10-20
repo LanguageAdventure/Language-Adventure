@@ -38,7 +38,6 @@
   .logo { margin: 14px auto 0; max-width: 460px; }
   .logo img { width: 100%; height: auto; display: block; }
   .tagline { font-size: 1.3rem; font-weight: 800; margin: 4px 0 0; }
-  .tagline2 { font-size: 1.15rem; font-weight: 600; margin-top: 2px; }
   .hero-cta { margin: 14px 16px 0; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
   .btn-alt { background: transparent; color: var(--ink); border: 2px solid var(--ink); box-shadow: none; }
 
