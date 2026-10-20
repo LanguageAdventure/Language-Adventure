@@ -38,6 +38,9 @@
   .logo { margin: 14px auto 0; max-width: 460px; }
   .logo img { width: 100%; height: auto; display: block; }
   .tagline { font-size: 1.3rem; font-weight: 800; margin: 4px 0 0; }
+  .tagline2 { font-size: 1.15rem; font-weight: 600; margin-top: 2px; }
+  .hero-cta { margin: 14px 16px 0; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+  .btn-alt { background: transparent; color: var(--ink); border: 2px solid var(--ink); box-shadow: none; }
 
   main { max-width: 640px; margin: 0 auto; padding: 0 18px 20px; }
   section { margin-top: 48px; }
@@ -147,9 +150,8 @@
   .find .btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
   .retro-os { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 26px; }
   .os {
-    display: inline-flex; flex-direction: column; align-items: center; gap: 8px; width: 118px; padding: 10px 6px 9px;
-    background: #c0c0c0; color: #000; font-family: inherit; font-weight: 800; font-size: 1.05rem; letter-spacing: .04em; letter-spacing: 0;
-    border: 2px solid; border-color: #fff #404040 #404040 #fff; box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #dfdfdf, 2px 2px 0 rgba(0,0,0,.25);
+    display: inline-flex; flex-direction: column; align-items: center; gap: 6px; width: 90px; padding: 4px;
+    background: none; color: inherit; font-family: inherit; font-weight: 800; font-size: .9rem; letter-spacing: .04em; opacity: .85; pointer-events: none; cursor: default;
   }
   .os svg { width: 48px; height: 45px; image-rendering: pixelated; }
 
