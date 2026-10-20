@@ -22,7 +22,7 @@
       "rights": "All rights reserved.",
       "navSupport": "Support the game",
       "supTitle": "Help me make the game!",
-      "supIntro": "Language Adventure is handmade by an independent developer. Any support is much appreciated. If you donate over €20 on any platform I'll make sure you get a copy of the English version.",
+      "supIntro": "Language Adventure is handmade by an independent developer. Any support is much appreciated. If you give €20 or more in total on Ko-fi or Patreon (one-off or added up over time), I'll send you a Steam key for the game.",
       "freeTitle": "Other ways to help",
       "free1": "Add it to your Steam wishlist",
       "free2": "Share the trailer with friends, teachers and language learners",
@@ -130,7 +130,7 @@
       "rights": "Tous droits réservés.",
       "navSupport": "Soutenir le jeu",
       "supTitle": "Aidez-moi à créer le jeu !",
-      "supIntro": "Language Adventure est fait main par un développeur indépendant. Tout soutien est très apprécié. Si vous faites un don de plus de 20 € sur n'importe quelle plateforme, je m'assurerai que vous receviez une copie de la version anglaise.",
+      "supIntro": "Language Adventure est fait main par un développeur indépendant. Tout soutien est très apprécié. Si vous donnez 20 € ou plus au total sur Ko-fi ou Patreon (en une fois ou cumulé), je vous enverrai une clé Steam du jeu.",
       "freeTitle": "Autres façons d'aider",
       "free1": "Ajoutez-le à votre liste de souhaits Steam",
       "free2": "Partagez la bande-annonce avec vos amis, vos professeurs et les apprenants de langues",
@@ -238,7 +238,7 @@
       "rights": "Todos los derechos reservados.",
       "navSupport": "Apoya el juego",
       "supTitle": "¡Ayúdame a crear el juego!",
-      "supIntro": "Language Adventure está hecho a mano por un desarrollador independiente. Cualquier apoyo se agradece mucho. Si donas más de 20 € en cualquier plataforma, me aseguraré de que recibas una copia de la versión en inglés.",
+      "supIntro": "Language Adventure está hecho a mano por un desarrollador independiente. Cualquier apoyo se agradece mucho. Si donas 20 € o más en total en Ko-fi o Patreon (de una vez o acumulado), te enviaré una clave de Steam del juego.",
       "freeTitle": "Otras formas de ayudar",
       "free1": "Añádelo a tu lista de deseos de Steam",
       "free2": "Comparte el tráiler con amigos, profesores y estudiantes de idiomas",
@@ -346,7 +346,7 @@
       "rights": "Todos os direitos reservados.",
       "navSupport": "Apoie o jogo",
       "supTitle": "Ajude-me a criar o jogo!",
-      "supIntro": "Language Adventure é feito à mão por um programador independente. Qualquer apoio é muito apreciado. Se doar mais de 20 € em qualquer plataforma, farei questão de que receba uma cópia da versão em inglês.",
+      "supIntro": "Language Adventure é feito à mão por um programador independente. Qualquer apoio é muito apreciado. Se doar 20 € ou mais no total no Ko-fi ou no Patreon (de uma vez ou acumulado), enviarei uma chave Steam do jogo.",
       "freeTitle": "Outras formas de ajudar",
       "free1": "Adicione-o à sua lista de desejos na Steam",
       "free2": "Partilhe o trailer com amigos, professores e estudantes de línguas",
@@ -454,7 +454,7 @@
       "rights": "Alle Rechte vorbehalten.",
       "navSupport": "Spiel unterstützen",
       "supTitle": "Hilf mir, das Spiel zu machen!",
-      "supIntro": "Language Adventure wird von einem unabhängigen Entwickler von Hand gemacht. Jede Unterstützung wird sehr geschätzt. Wenn du auf einer beliebigen Plattform mehr als 20 € spendest, sorge ich dafür, dass du eine Kopie der englischen Version bekommst.",
+      "supIntro": "Language Adventure wird von einem unabhängigen Entwickler von Hand gemacht. Jede Unterstützung wird sehr geschätzt. Wenn du auf Ko-fi oder Patreon insgesamt 20 € oder mehr gibst (einmalig oder über die Zeit zusammengerechnet), schicke ich dir einen Steam-Key für das Spiel.",
       "freeTitle": "Weitere Möglichkeiten zu helfen",
       "free1": "Setz es auf deine Steam-Wunschliste",
       "free2": "Teile den Trailer mit Freunden, Lehrkräften und Sprachlernenden",
@@ -562,7 +562,7 @@
       "rights": "Tutti i diritti riservati.",
       "navSupport": "Sostieni il gioco",
       "supTitle": "Aiutami a creare il gioco!",
-      "supIntro": "Language Adventure è fatto a mano da uno sviluppatore indipendente. Ogni sostegno è molto apprezzato. Se doni più di 20 € su qualsiasi piattaforma, mi assicurerò che tu riceva una copia della versione inglese.",
+      "supIntro": "Language Adventure è fatto a mano da uno sviluppatore indipendente. Ogni sostegno è molto apprezzato. Se doni 20 € o più in totale su Ko-fi o Patreon (una tantum o sommati nel tempo), ti invierò una chiave Steam del gioco.",
       "freeTitle": "Altri modi per aiutare",
       "free1": "Aggiungilo alla tua lista dei desideri su Steam",
       "free2": "Condividi il trailer con amici, insegnanti e studenti di lingue",
@@ -974,8 +974,8 @@
   if (y) y.textContent = new Date().getFullYear();
   setLang(start);
 
-  // Ko-fi floating "Support" button
-  {
+  // Ko-fi floating "Support" button (desktop only; it covers content on phones)
+  if (!window.matchMedia('(max-width: 720px)').matches) {
     var kf = document.createElement('script');
     kf.src = 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js';
     kf.async = true;
