@@ -1007,7 +1007,7 @@
       data.website_language = T[cur].langName;
       btn.disabled = true;
       status.textContent = T[cur].formSending;
-      fetch('https://formsubmit.co/ajax/gameswonky@gmail.com', {
+      fetch('https://formsubmit.co/ajax/991c490e3a5f892537234eb38fdbd543', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data)
@@ -1054,7 +1054,7 @@
       d.website_language = T[cur].langName;
       jb.disabled = true;
       js_.textContent = T[cur].joinSending;
-      fetch('https://formsubmit.co/ajax/gameswonky@gmail.com', {
+      fetch('https://formsubmit.co/ajax/991c490e3a5f892537234eb38fdbd543', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(d)
