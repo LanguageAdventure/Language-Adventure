@@ -677,12 +677,13 @@
   // Photos: img/photos/<file> is the default (no translation); img/photos/<lang>/<file> overrides it for that language.
   var PHOTOS = {
     base: { 1: '1.jpg', 2: '2.gif', 3: '3.gif', 4: '4.gif', 5: '5.gif', 6: '6.jpg', 8: '8.gif', 9: '9.jpg',
-            12: '12.gif', 13: '13.gif', 14: '14.gif', 15: '15.gif', 16: '16.gif', 18: '18.gif' },
-    fr: { 7: '7.jpg', 10: '10.jpg', 11: '11.jpg', 18: '18.gif' },
-    es: { 11: '11.jpg', 18: '18.gif' },
-    pt: { 18: '18.gif' },
-    de: { 18: '18.gif' },
-    it: { 18: '18.gif' }
+            12: '12.gif', 13: '13.gif', 14: '14.gif', 15: '15.gif', 16: '16.gif', 18: '18.gif',
+            20: '20.gif', 21: '21.gif', 22: '22.gif', 23: '23.gif', 24: '24.gif', 25: '25.gif' },
+    fr: { 7: '7.jpg', 10: '10.jpg', 11: '11.jpg', 18: '18.gif', 20: '20.gif', 21: '21.gif', 22: '22.gif', 23: '23.gif', 24: '24.gif', 25: '25.gif' },
+    es: { 11: '11.jpg', 18: '18.gif', 20: '20.gif', 21: '21.gif', 22: '22.gif', 23: '23.gif', 24: '24.gif', 25: '25.gif' },
+    pt: { 18: '18.gif', 20: '20.gif', 21: '21.gif', 22: '22.gif', 23: '23.gif', 24: '24.gif', 25: '25.gif' },
+    de: { 18: '18.gif', 20: '20.gif', 21: '21.gif', 22: '22.gif', 23: '23.gif', 24: '24.gif', 25: '25.gif' },
+    it: { 18: '18.gif', 20: '20.gif', 21: '21.gif', 22: '22.gif', 23: '23.gif', 24: '24.gif', 25: '25.gif' }
   };
   var ALT = {
     1: 'Narrated by Adam Buxton', 2: 'Stop motion bedroom with a teddy bear on the bed',
@@ -693,7 +694,10 @@
     12: 'Red alien with one eye', 13: 'Teacher in front of a blackboard',
     14: 'Four little aliens: don\'t worry, they don\'t bite', 15: 'Folded checked napkin',
     16: 'One-eyed alien beside a glass globe',
-    18: 'Bedroom window with a curtain'
+    18: 'Bedroom window with a curtain', 20: 'Bedroom with a bedside lamp',
+    21: 'Kitchen with a little dog', 22: 'Flying saucer crashed in the garden',
+    23: 'Bedroom with a laundry basket', 24: 'Feeding the dog in the kitchen',
+    25: 'Flying saucer crashed in the garden'
   };
 
   // Still-photo size multiplier (1 = original size); GIFs always stay original size
